@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%;
+}
+
+.test-1 {
+  width: 100vh;
+  height: 100vh;
+  background: aqua;
+}
+@media (min-width: 1200px) {
+  .test-1 {
+    background: red;
+  }
+}
+
+div {
+  background: red;
+}
+
+h1 {
+  color: red;
+}
+
+body {
+  background: purple;
+}
+
+h2 {
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=style.css.map */

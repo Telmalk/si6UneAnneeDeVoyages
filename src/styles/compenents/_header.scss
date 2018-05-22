@@ -1,0 +1,10 @@
+.test {
+  &-1 {
+    width: 100vh;
+    height: 100vh;
+    background: aqua;
+    @include for-size(desktop-up) {
+      background: red;
+    }
+  }
+}
