@@ -47,7 +47,7 @@ function getContentAdmin(PDO $pdo)
                     <td>article n°: <?=$row['id_article']?></td>
                     <td><?=$row["title"]?></td>
                     <td><a href="../update.php">Modifier</a></td>
-                    <td><a href="../delete.php">Suprimmer</a></td>
+                    <td><a href="../delete.php?id=<?=$row['id_article']?>">Suprimmer</a></td>
                 </tr>
     <?php
             $checkNbArticles++;
@@ -62,7 +62,7 @@ function getContentAdmin(PDO $pdo)
     <?php
 }
 
-function formAddArticle(string $autor)
+function formAddArticle()
 {
     date_default_timezone_set('UTC');
     $today = date('d.m.y');
@@ -72,7 +72,6 @@ function formAddArticle(string $autor)
         <label>Lien de l'image<input type="text" name="img"></label><br/>
         <label>Contenu<input type="text" name="content"></label><br/>
         <input type="hidden" value="<?=$today?>" name="today">
-        <input type="hidden" value="<?=$autor?>" name="author">
         <button type="submit">Valider</button>
     </form>
     <?php
@@ -133,6 +132,49 @@ function doSignIn(PDO $pdo)
         header("location: ./signin.php?error=erroraccount");
         exit;
     }
+    header("location: ./index.php");
+    exit;
+}
+
+function confirmDelete(PDO $pdo)
+{
+    $sql = "
+        SELECT
+            `title`
+        FROM
+          articles
+        WHERE
+          `id_article` = :id_article;
+    ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id_article", $_GET['id']);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row === false) {
+        header("location?error=deleteeroor");
+        exit;
+    }
+    ?>
+    <a href="./index.php">Retour a la home</a>
+    <form method="post" action="./dodelete.php?id=<?=$_GET['id']?>">
+        <p>Etes vous sur de vouloir suprimmer l'article <?=$row['title']?></p>
+        <button type="submit">Oui</button>
+    </form>
+    <?php
+}
+
+function doDelete(PDO $pdo)
+{
+    $sql = "
+        DELETE FROM `articles`
+        WHERE 
+        `id_article` = :id_article;
+    ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id_article", $_GET['id']);
+    $stmt->execute();
     header("location: ./index.php");
     exit;
 }

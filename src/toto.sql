@@ -32,3 +32,18 @@ SELECT
   AND
     password = 'admin'
 ;
+
+INSERT INTO `articles`
+SET
+`title` = :title,
+`img` = :img,
+`content` = :content,
+`spawnDate` = :today,
+`id_user` = :id_user;
+
+SELECT
+  `title`
+FROM
+  articles
+WHERE
+  `id_article` = 4
