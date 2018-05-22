@@ -10,5 +10,5 @@ session_start();
 require_once "./function/function.php";
 
 getHeader();
-formAddArticle("admin");
+formAddArticle();
 getFooter();
