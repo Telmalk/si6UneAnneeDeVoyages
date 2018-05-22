@@ -3,12 +3,12 @@
  * Created by PhpStorm.
  * User: cleme
  * Date: 22/05/2018
- * Time: 16:52
+ * Time: 20:04
  */
-session_start();
-require_once "../include/connection.php";
-require_once "function/function.php";
 
-getHeader();
-formUpdate($pdo);
-getFooter();
+session_start();
+
+require_once "../include/connection.php";
+require_once "./function/function.php";
+
+doUpdate($pdo);

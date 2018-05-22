@@ -46,7 +46,7 @@ function getContentAdmin(PDO $pdo)
                 <tr>
                     <td>article n°: <?=$row['id_article']?></td>
                     <td><?=$row["title"]?></td>
-                    <td><a href="../update.php">Modifier</a></td>
+                    <td><a href="../update.php?id=<?=$row["id_article"]?>">Modifier</a></td>
                     <td><a href="../delete.php?id=<?=$row['id_article']?>">Suprimmer</a></td>
                 </tr>
     <?php
@@ -174,6 +174,57 @@ function doDelete(PDO $pdo)
 
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":id_article", $_GET['id']);
+    $stmt->execute();
+    header("location: ./index.php");
+    exit;
+}
+
+function formUpdate(PDO $pdo)
+{
+    $sql = "
+        SELECT
+          `title`,
+          `img`,
+          `content`
+        FROM
+          `articles`
+        WHERE
+          `id_article` = :id_article;
+    ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id_article", $_GET["id"]);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row === false) {
+        header("location: ./index.php?error=nodatatoedit");
+        exit;
+    }
+    ?>
+    <form method="post" action="doupdate.php?id=<?=$_GET['id']?>">
+        <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label>
+        <label>Modifier le titre <input type="text" name="img" value="<?=$row["img"]?>"></label>
+        <label>Modifier le titre <input type="text" name="content" value="<?=$row["content"]?>"></label>
+        <button type="submit">Valider</button>
+    </form>
+    <?php
+}
+
+function doUpdate(PDO $pdo)
+{
+    $sql = "
+        UPDATE `articles`
+        SET
+        `title` = :title,
+        `img` = :img,
+        `content` = :content
+        WHERE
+        `id_article` = :id_article
+    ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":title" , $_POST['title']);
+    $stmt->bindValue(":img" , $_POST['img']);
+    $stmt->bindValue(":content" , $_POST['content']);
+    $stmt->bindValue(":id_article", $_GET["id"]);
     $stmt->execute();
     header("location: ./index.php");
     exit;
