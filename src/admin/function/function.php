@@ -128,7 +128,6 @@ function doSignIn(PDO $pdo)
         var_dump($_SESSION);
     } else {
         $_SESSION["error"]["log"] = "Mauvais modt de passe ou nom d'utilisateur";
-        //var_dump($_SESSION);
         header("location: ./signin.php?error=erroraccount");
         exit;
     }
@@ -200,6 +199,7 @@ function formUpdate(PDO $pdo)
         exit;
     }
     ?>
+    <a href="./index.php">Retour a la home</a>
     <form method="post" action="doupdate.php?id=<?=$_GET['id']?>">
         <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label>
         <label>Modifier le titre <input type="text" name="img" value="<?=$row["img"]?>"></label>
