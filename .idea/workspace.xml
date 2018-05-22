@@ -14,7 +14,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
@@ -28,6 +28,16 @@
                 <marker date="1527013126856" expanded="true" signature="4312:4459" ph="SELECT `titl... articles" />
                 <marker date="1527013126856" expanded="true" signature="5222:5377" ph="UPDATE `articles`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connection.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/include/connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,16 +116,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="addArticle.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/addArticle.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -155,7 +155,6 @@
         <option value="$PROJECT_DIR$/styles/global/_variables.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/include/function.php" />
-        <option value="$PROJECT_DIR$/src/include/connection.php" />
         <option value="$PROJECT_DIR$/src/index.php" />
         <option value="$PROJECT_DIR$/src/admin/dosignin.php" />
         <option value="$PROJECT_DIR$/src/admin/abort.php" />
@@ -169,6 +168,7 @@
         <option value="$PROJECT_DIR$/src/toto.sql" />
         <option value="$PROJECT_DIR$/src/admin/doupdate.php" />
         <option value="$PROJECT_DIR$/src/admin/function/function.php" />
+        <option value="$PROJECT_DIR$/src/include/connection.php" />
       </list>
     </option>
   </component>
@@ -285,12 +285,12 @@
       <workItem from="1526988338656" duration="704000" />
       <workItem from="1526989073956" duration="3697000" />
       <workItem from="1526997517858" duration="11330000" />
-      <workItem from="1527012389544" duration="762000" />
+      <workItem from="1527012389544" duration="814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17098000" />
+    <option name="totallyTimeSpent" value="17150000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -491,14 +491,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/include/connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="1" lean-forward="false" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -620,6 +612,14 @@
             <marker date="1527013126856" expanded="true" signature="4312:4459" ph="SELECT `titl... articles" />
             <marker date="1527013126856" expanded="true" signature="5222:5377" ph="UPDATE `articles`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/include/connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="71" lean-forward="false" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
