@@ -167,11 +167,12 @@ table {
 }
 
 .modal {
-  display: none;
+  display: block;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: -400px;
+  transition: right 0.5s ease;
   height: 100%;
 }
 @media (min-width: 600px) {
@@ -179,10 +180,10 @@ table {
     width: 40%;
     background-color: black;
     background: rgba(0, 0, 0, 0.6);
-    margin-left: 60%;
   }
 }
 .modal-overlay {
+  display: none;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -208,7 +209,7 @@ table {
 }
 .modal-content-li {
   text-align: center;
-  width: 100%;
+  width: 300px;
   padding: 10px;
   height: 5vh;
 }
@@ -222,3 +223,15 @@ table {
     display: none;
   }
 }
+
+.activeModal {
+  right: 0;
+  transition: right 0.5s ease;
+}
+
+body {
+  position: relative;
+  z-index: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
