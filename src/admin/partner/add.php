@@ -6,6 +6,7 @@
  * Time: 20:27
  */
 
+session_start();
 require_once "../function/function.php";
 getHeader();
 formPartner();
