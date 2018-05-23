@@ -10,14 +10,7 @@ session_start();
 require_once "../include/connection.php";
 require_once "./function/function.php";
 
-if (!isset($_SESSION['log'])) {
-    if ($_SESSION['user']['name'] === NULL || $_SESSION["user"]["name"] === NULL) {
-        header("location: ./signin.php");
-        exit;
-    }
-    header("location: ./signin.php");
-    exit;
-}
+checkUser("./signin.php");
 getHeader();
 getContentAdmin($pdo);
 getFooter();

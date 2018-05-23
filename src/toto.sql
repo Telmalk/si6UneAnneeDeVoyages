@@ -65,3 +65,16 @@ SELECT
       `partner`
     WHERE
       `id_partner` = 1;
+
+
+INSERT INTO `carrousel`
+    SET
+    `description` = 'description',
+    `title` = 'title',
+    `city` = 'citie',
+    `etablissement` = 'dname',
+    `img` = 'img',
+    `url_site` = 'url',
+    `adress` = 'adress',
+    `phone_number` = 'phone',
+    `category` = 'category';

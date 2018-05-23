@@ -6,6 +6,18 @@
  * Time: 16:12
  */
 
+
+function checkUser(string $signWay)
+{
+    if (!isset($_SESSION['log'])) {
+        if ($_SESSION['user']['name'] === NULL || $_SESSION["user"]["name"] === NULL) {
+            header("location: ".$signWay);
+            exit;
+        }
+        header("location: ".$signWay);
+        exit;
+    }
+}
 function getHeader()
 {
     ?>
@@ -16,7 +28,7 @@ function getHeader()
     <title>toto</title>
 </head>
 <body>
-    <a href="abort.php">deco</a>
+    <a href="../abort.php">deco</a>
 <?php
 }
 
@@ -40,14 +52,14 @@ function getContentAdmin(PDO $pdo)
     ?>
     <table>
         <tr>
-            <td><a href="../addArticle.php">ajouter un article</a></td>
+            <td><a href="article/addArticle.php">ajouter un article</a></td>
         </tr>
             <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
                 <tr>
                     <td>article n°: <?=$row['id_article']?></td>
                     <td><?=$row["title"]?></td>
-                    <td><a href="../update.php?id=<?=$row["id_article"]?>">Modifier</a></td>
-                    <td><a href="../delete.php?id=<?=$row['id_article']?>">Suprimmer</a></td>
+                    <td><a href="article/update.php?id=<?=$row["id_article"]?>">Modifier</a></td>
+                    <td><a href="article/delete.php?id=<?=$row['id_article']?>">Suprimmer</a></td>
                 </tr>
     <?php
             $checkNbArticles++;
@@ -59,8 +71,8 @@ function getContentAdmin(PDO $pdo)
         }
     ?>
         </table>
-        <a href="./partner/add.php">Ajouter un partenaire</a><br/>
         <a href="./partner/showPartner.php">Liste des partenaires</a>
+        <a href="./caroussel/showCompany.php">List des etablissement proposé</a>
     <?php
 }
 
@@ -90,7 +102,7 @@ function formSignIn()
         </form>
         <?php
     } else {
-        header("location: index.php");
+        header("location: ../index.php");
     }
 }
 
@@ -133,7 +145,7 @@ function doSignIn(PDO $pdo)
         header("location: ./signin.php?error=erroraccount");
         exit;
     }
-    header("location: ./index.php");
+    header("location: ../index.php");
     exit;
 }
 
@@ -157,7 +169,7 @@ function confirmDelete(PDO $pdo)
         exit;
     }
     ?>
-    <a href="./index.php">Retour a la home</a>
+    <a href="../index.php">Retour a la home</a>
     <form method="post" action="./dodelete.php?id=<?=$_GET['id']?>">
         <p>Etes vous sur de vouloir suprimmer l'article <?=$row['title']?></p>
         <button type="submit">Oui</button>
@@ -176,7 +188,7 @@ function doDelete(PDO $pdo)
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":id_article", $_GET['id']);
     $stmt->execute();
-    header("location: ./index.php");
+    header("location: ../index.php");
     exit;
 }
 
@@ -201,7 +213,7 @@ function formUpdate(PDO $pdo)
         exit;
     }
     ?>
-    <a href="./index.php">Retour a la home</a>
+    <a href="../index.php">Retour a la home</a>
     <form method="post" action="doupdate.php?id=<?=$_GET['id']?>">
         <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label>
         <label>Modifier le titre <input type="text" name="img" value="<?=$row["img"]?>"></label>
@@ -228,7 +240,7 @@ function doUpdate(PDO $pdo)
     $stmt->bindValue(":content" , $_POST['content']);
     $stmt->bindValue(":id_article", $_GET["id"]);
     $stmt->execute();
-    header("location: ./index.php");
+    header("location: ../index.php");
     exit;
 }
 
@@ -267,6 +279,7 @@ function showListPartner(PDO $pdo)
 function formPartner()
 {
     ?>
+    <a href="./showPartner.php">Retour a la liste des partenaire</a>
     <form method="post" action="doadd.php">
         <label>Nom du partenaire : <input type="text" name="name"></label>
         <label>Logo du partenaire : <input type="text" name="logo"></label>
@@ -324,6 +337,7 @@ function confrimDeletePartner(PDO $pdo)
             unset($_SESSION["error"]["delete"]);
         }
         ?>
+        <a href="./showPartner.php">Retour a la liste des partenaire</a>
         <p>Etes vous sur de vouloir suprimmer le partenaire <?=$row['name']?></p>
         <form method="post" action="dodelete.php?id=<?=$row['id_partner']?>">
             <button type="submit">Oui</button>
@@ -348,9 +362,8 @@ function doDeletePartner(PDO $pdo)
     header("location: ./showPartner.php");
 }
 
-function whoSelected(string $whatCategory)
+function whoSelected(string $whatCategory, array $categoryArray)
 {
-    $categoryArray = ["Spa", "Hotel", "Compagnie aerienne", "Restaurant"];
     $optionArray = [];
     $index = 0;
     while ($index < sizeof($categoryArray)) {
@@ -379,6 +392,7 @@ function formUpdatePartner(PDO $pdo)
     WHERE
       `id_partner` = :id;
 ";
+    $categoryArray = ["Spa", "Hotel", "Compagnie aerienne", "Restaurant"];
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":id", $_GET['id']);
     $stmt->execute();
@@ -388,8 +402,9 @@ function formUpdatePartner(PDO $pdo)
         header('location: ./showPartner.php?error=nodatatoedit');
         exit;
     }
-    $optionArray = whoSelected($row["categorie"]);
+    $optionArray = whoSelected($row["categorie"], $categoryArray);
     ?>
+    <a href="./showPartner.php">Retour a la liste des partenaire</a>
     <form method="post" action="doupdate.php?id=<?=$row['id_partner']?>">
         <label>Entreprise partenaire: <input type="text" name="name" value="<?=$row['name']?>"></label>
         <label>Logo partneaire url: <input type="text" name="logo" value="<?=$row['logo']?>"></label>
@@ -407,6 +422,14 @@ function formUpdatePartner(PDO $pdo)
         <button type="submit">Valider</button>
     </form>
     <?php
+}
+
+function saveFile() {
+    $move = move_uploaded_file($_FILES['img']['tmp_name'], "../../img/".$_FILES["img"]['name']);
+    if ($move === false) {
+        return -1;
+    }
+    return 0;
 }
 
 function getFooter()

@@ -7,8 +7,9 @@
  */
 
 session_start();
-require_once "./function/function.php";
+require_once "../function/function.php";
 
+checkUser();
 getHeader();
 formAddArticle();
 getFooter();

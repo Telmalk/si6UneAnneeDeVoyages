@@ -6,8 +6,10 @@
  * Time: 16:52
  */
 session_start();
-require_once "../include/connection.php";
-require_once "function/function.php";
+require_once "../../include/connection.php";
+require_once "../function/function.php";
+checkUser("../../signin.php");
+
 
 getHeader();
 formUpdate($pdo);
