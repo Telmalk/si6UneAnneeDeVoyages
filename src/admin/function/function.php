@@ -297,6 +297,54 @@ function addPartner(PDO $pdo)
     header("location: ./showPartner.php");
 }
 
+function confrimDeletePartner(PDO $pdo)
+{
+    $sql = "
+        SELECT
+            `id_partner`,
+            `name`
+        FROM
+          `partner`
+        WHERE
+          id_partner = :id;
+    ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id", $_GET['id']);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row === false) {
+        header("location: ./showPartner.php?error=nodatatoedit");
+        $_SESSION['error']["delete"] = "Rien a effacer";
+    } else  {
+        if (isset($_SESSION["error"]["delete"])) {
+            unset($_SESSION["error"]["delete"]);
+        }
+        ?>
+        <p>Etes vous sur de vouloir suprimmer le partenaire <?=$row['name']?></p>
+        <form method="post" action="dodelete.php?id=<?=$row['id_partner']?>">
+            <button type="submit">Oui</button>
+        </form>
+    <?php
+
+    }
+
+}
+
+function doDeletePartner(PDO $pdo)
+{
+    $sql = "
+        DELETE FROM `partner`
+        WHERE
+        `id_partner` = :id;
+     ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id", $_GET['id']);
+    $stmt->execute();
+    header("location: ./showPartner.php");
+}
+
 function getFooter()
 {
 ?>
