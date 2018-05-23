@@ -167,6 +167,9 @@ table {
     font-size: 2rem;
   }
 }
+.text-bloc :hover {
+  color: #92F4E2;
+}
 .text-social {
   display: none;
 }
