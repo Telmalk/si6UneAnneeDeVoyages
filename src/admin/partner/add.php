@@ -8,6 +8,8 @@
 
 session_start();
 require_once "../function/function.php";
+checkUser("../signin.php");
+
 getHeader();
 formPartner();
 getFooter();

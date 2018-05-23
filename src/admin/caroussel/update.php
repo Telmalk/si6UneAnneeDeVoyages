@@ -8,7 +8,8 @@
 session_start();
 require_once "../../include/connection.php";
 require_once "../function/function.php";
-checkUser("../../signin.php");
+checkUser("../signin.php");
+getHeader("../");
 
 $sql = "
     SELECT
@@ -39,15 +40,15 @@ if ($row === false) {
 }
 ?>
 
-<form method="post" action="doupdate.php?img=<?=$row['img']?>&amp;id=<?=$row['id_carrousel']?>"  enctype="multipart/form-data">
+<form class="container" method="post" action="doupdate.php?img=<?=$row['img']?>&amp;id=<?=$row['id_carrousel']?>"  enctype="multipart/form-data">
     <label>Titre du Post: <input type="text" name="title" value="<?=$row['title']?>"></label><br />
     <label>imge du post: <input type="file" name="img" value="img.jpg"></label> <br/>
     <label>Ville du post: <input type="text" name="citie" value="<?=$row['city']?>"></label> <br/>
-    <label>Description du post: <input type="text" name="description" value="<?=$row['description']?>"></label><br/>
     <label>Nom de l'etablissement <input type="text" name="name" value="<?=$row['etablissement']?>"></label><br/>
     <label>Adresse de l'etablissment <input type="text" name="adress" value="<?=$row['adress']?>"></label><br/>
-    <label>Numéro de l'etablissement <input type="text" name="phone" value="<?=$row['phone_number']?>"></label>
-    <label>Url du Site<input type="text" name="url_site" value="<?=$row['url_site']?>"></label>
+    <label>Description du post: <input type="text" name="description" value="<?=$row['description']?>"></label><br/>
+    <label>Numéro de l'etablissement <input type="text" name="phone" value="<?=$row['phone_number']?>"></label><br/>
+    <label>Url du Site<input type="text" name="url_site" value="<?=$row['url_site']?>"></label><br/>
     <label> Type de l'activité
         <select name="category">
             <?php
@@ -60,5 +61,6 @@ if ($row === false) {
                 }
             ?>
         </select>
-    </label>
-    <button type="submit">Valider</button>
+    </label><br/>
+    <label>Description du post:  <textarea name="description"><?=$row['description']?></textarea></label><br/>
+    <button class="btn btn-success" type="submit">Valider</button>
