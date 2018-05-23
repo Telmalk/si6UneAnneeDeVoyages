@@ -259,6 +259,9 @@ function showListPartner(PDO $pdo)
                 <p>Aucun partenaire pour l'instant</p>
                 <?php
             endif;
+            ?>
+    <a href="../index.php">Retour a la home</a>
+    <?php
 }
 
 function formPartner()
@@ -347,16 +350,16 @@ function doDeletePartner(PDO $pdo)
 
 function whoSelected(string $whatCategory)
 {
-    $categoryArray = ["spa", "hotel", "compagnie aerienne", "restaurant"];
+    $categoryArray = ["Spa", "Hotel", "Compagnie aerienne", "Restaurant"];
     $optionArray = [];
     $index = 0;
-    while ($index <= sizeof($categoryArray)) {
-        if ($categoryArray[$index] === $whatCategory) {
-            $option = "<option selected value='".$whatCategory.".$whatCategory.</option>";
-            $optionArray[] = $option;
+    while ($index < sizeof($categoryArray)) {
+        if ($categoryArray[$index] == $whatCategory) {
+            $option = "<option selected value='$whatCategory'> $whatCategory</option>";
+            array_push($optionArray, $option);
         } else {
-            $option = "<option value='".$whatCategory.".$whatCategory.</option>";
-            $optionArray[] = $option;
+            $option = "<option value='$categoryArray[$index]'>$categoryArray[$index]</option>";
+            array_push($optionArray, $option);
         }
         $index++;
     }
@@ -382,23 +385,26 @@ function formUpdatePartner(PDO $pdo)
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     if ($row === false) {
         $_SESSION["error"]["data"] = "une erreur est survenu";
-        //header('location: ./showPartner.php?error=nodatatoedit');
-        //exit;
+        header('location: ./showPartner.php?error=nodatatoedit');
+        exit;
     }
+    $optionArray = whoSelected($row["categorie"]);
     ?>
-    <form>
+    <form method="post" action="doupdate.php?id=<?=$row['id_partner']?>">
         <label>Entreprise partenaire: <input type="text" name="name" value="<?=$row['name']?>"></label>
         <label>Logo partneaire url: <input type="text" name="logo" value="<?=$row['logo']?>"></label>
-        <label><select name="category">
+        <label>
+            <select name="category">
             <?php
-                $optionArray = whoSelected($row["categorie"]);
                 $index = 0;
                 while ($index < sizeof($optionArray)) {
                     echo $optionArray[$index];
                     $index++;
                 }
             ?>
-        </select>
+            </select>
+        </label>
+        <button type="submit">Valider</button>
     </form>
     <?php
 }
