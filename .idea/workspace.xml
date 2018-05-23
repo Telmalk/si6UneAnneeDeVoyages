@@ -17,22 +17,22 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8694">
-              <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="420" selection-end-column="0" />
+            <state relative-caret-position="-945">
+              <caret line="364" column="20" lean-forward="false" selection-start-line="364" selection-start-column="9" selection-end-line="364" selection-end-column="20" />
               <folding>
-                <marker date="1527098180808" expanded="true" signature="456:475" ph="..." />
-                <marker date="1527098180808" expanded="true" signature="522:535" ph="..." />
-                <marker date="1527098180808" expanded="true" signature="627:729" ph="SELECT `id_a... articles" />
-                <marker date="1527098180808" expanded="true" signature="2791:2985" ph="SELECT `id_u... user" />
-                <marker date="1527098180808" expanded="true" signature="3779:3888" ph="SELECT `titl... articles" />
-                <marker date="1527098180808" expanded="true" signature="4460:4532" ph="DELETE FROM `articles`... " />
-                <marker date="1527098180808" expanded="true" signature="4751:4898" ph="SELECT `titl... articles" />
-                <marker date="1527098180808" expanded="true" signature="5709:5864" ph="UPDATE `articles`... " />
-                <marker date="1527098180808" expanded="true" signature="6232:6327" ph="SELECT id_pa... partner" />
-                <marker date="1527098180808" expanded="true" signature="7774:7879" ph="INSERT INTO `partner`... " />
-                <marker date="1527098180808" expanded="true" signature="8203:8328" ph="SELECT `id_p... partner" />
-                <marker date="1527098180808" expanded="true" signature="9137:9199" ph="DELETE FROM `partner`... " />
-                <marker date="1527098180808" expanded="true" signature="9972:10104" ph="SELECT `id_p... partner" />
+                <marker date="1527107010492" expanded="true" signature="456:475" ph="..." />
+                <marker date="1527107010492" expanded="true" signature="522:535" ph="..." />
+                <marker date="1527107010492" expanded="true" signature="626:728" ph="SELECT `id_a... articles" />
+                <marker date="1527107010492" expanded="true" signature="2790:2984" ph="SELECT `id_u... user" />
+                <marker date="1527107010492" expanded="true" signature="3777:3886" ph="SELECT `titl... articles" />
+                <marker date="1527107010492" expanded="true" signature="4458:4530" ph="DELETE FROM `articles`... " />
+                <marker date="1527107010492" expanded="true" signature="4749:4896" ph="SELECT `titl... articles" />
+                <marker date="1527107010492" expanded="true" signature="5707:5862" ph="UPDATE `articles`... " />
+                <marker date="1527107010492" expanded="true" signature="6230:6325" ph="SELECT id_pa... partner" />
+                <marker date="1527107010492" expanded="true" signature="7772:7877" ph="INSERT INTO `partner`... " />
+                <marker date="1527107010492" expanded="true" signature="8201:8326" ph="SELECT `id_p... partner" />
+                <marker date="1527107010492" expanded="true" signature="9135:9197" ph="DELETE FROM `partner`... " />
+                <marker date="1527107010492" expanded="true" signature="9970:10102" ph="SELECT `id_p... partner" />
               </folding>
             </state>
           </provider>
@@ -41,67 +41,67 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/caroussel/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+            <state relative-caret-position="478">
+              <caret line="32" column="46" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="32" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="showCompany.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/showCompany.php">
+      <file leaf-file-name="doupdate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+            <state relative-caret-position="436">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <marker date="1527103713455" expanded="true" signature="237:338" ph="SELECT `id_c... carrousel" />
+                <marker date="1527109912610" expanded="true" signature="233:522" ph="UPDATE `carrousel`... " />
+                <marker date="1527109912610" expanded="true" signature="239:487" ph="INSERT INTO `carrousel`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/delete.php">
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/update.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="10" column="14" lean-forward="false" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+              <caret line="41" column="66" lean-forward="false" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
               <folding>
-                <marker date="1527103826238" expanded="true" signature="231:325" ph="SELECT `id_c... carrousel" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dodelete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/dodelete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="35" lean-forward="false" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-              <folding>
-                <marker date="1527103999756" expanded="true" signature="232:284" ph="DELETE FROM `carrousel`... " />
+                <marker date="1527109213410" expanded="true" signature="236:480" ph="SELECT `id_c... carrousel" />
+                <marker date="1527109213410" expanded="true" signature="236:507" ph="SELECT `id_c... carrousel" />
+                <marker date="1527109213410" expanded="true" signature="1728:1769" ph="..." />
+                <marker date="1527109213410" expanded="true" signature="1780:2167" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="doupdate.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doupdate.php">
+        <entry file="file://$PROJECT_DIR$/src/admin/article/doupdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="168">
+              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/admin/caroussel/update.php">
+      <file leaf-file-name="signin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/signin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-              <folding>
-                <marker date="1527104165540" expanded="true" signature="236:327" ph="SELECT `id_c... carrousel" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dosignin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/dosignin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -110,17 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/admin/article/addArticle.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
-              <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="delete.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/admin/article/delete.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -129,10 +119,22 @@
       <file leaf-file-name="doadd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doadd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="819">
-              <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+            <state relative-caret-position="567">
+              <caret line="43" column="48" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="43" selection-end-column="48" />
               <folding>
-                <marker date="1527102817860" expanded="true" signature="333:592" ph="INSERT INTO `carrousel`... " />
+                <marker date="1527107783589" expanded="true" signature="333:592" ph="INSERT INTO `carrousel`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doadd.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/article/doadd.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+              <folding>
+                <marker date="1527107163707" expanded="true" signature="229:352" ph="INSERT INTO `articles`... " />
               </folding>
             </state>
           </provider>
@@ -168,6 +170,7 @@
       <find>confirmDelete</find>
       <find>update</find>
       <find>formPa</find>
+      <find>doSignIn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,23 +213,23 @@
         <option value="$PROJECT_DIR$/src/admin/article/signin.php" />
         <option value="$PROJECT_DIR$/src/admin/signin.php" />
         <option value="$PROJECT_DIR$/src/admin/dosignin.php" />
-        <option value="$PROJECT_DIR$/src/admin/article/addArticle.php" />
         <option value="$PROJECT_DIR$/src/admin/index.php" />
         <option value="$PROJECT_DIR$/src/admin/article/delete.php" />
-        <option value="$PROJECT_DIR$/src/admin/article/doadd.php" />
         <option value="$PROJECT_DIR$/src/admin/article/dodelete.php" />
         <option value="$PROJECT_DIR$/src/admin/article/doupdate.php" />
         <option value="$PROJECT_DIR$/src/admin/article/update.php" />
-        <option value="$PROJECT_DIR$/src/admin/caroussel/doupdate.php" />
         <option value="$PROJECT_DIR$/src/admin/abort.php" />
         <option value="$PROJECT_DIR$/src/toto.sql" />
-        <option value="$PROJECT_DIR$/src/admin/function/function.php" />
         <option value="$PROJECT_DIR$/src/admin/caroussel/add.php" />
-        <option value="$PROJECT_DIR$/src/admin/caroussel/doadd.php" />
         <option value="$PROJECT_DIR$/src/admin/caroussel/showCompany.php" />
         <option value="$PROJECT_DIR$/src/admin/caroussel/delete.php" />
         <option value="$PROJECT_DIR$/src/admin/caroussel/dodelete.php" />
+        <option value="$PROJECT_DIR$/src/admin/function/function.php" />
+        <option value="$PROJECT_DIR$/src/admin/article/addArticle.php" />
+        <option value="$PROJECT_DIR$/src/admin/article/doadd.php" />
+        <option value="$PROJECT_DIR$/src/admin/caroussel/doadd.php" />
         <option value="$PROJECT_DIR$/src/admin/caroussel/update.php" />
+        <option value="$PROJECT_DIR$/src/admin/caroussel/doupdate.php" />
       </list>
     </option>
   </component>
@@ -238,8 +241,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="271" />
-    <option name="y" value="-25" />
+    <option name="x" value="-266" />
+    <option name="y" value="48" />
     <option name="width" value="1440" />
     <option name="height" value="823" />
   </component>
@@ -278,13 +281,6 @@
               <item name="voyageAn" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="voyageAn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="voyageAn" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="article" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="voyageAn" type="b2602c69:ProjectViewProjectNode" />
@@ -362,17 +358,18 @@
       <workItem from="1527012389544" duration="1893000" />
       <workItem from="1527060568307" duration="22541000" />
       <workItem from="1527102800406" duration="1355000" />
-      <workItem from="1527105837933" duration="260000" />
+      <workItem from="1527105837933" duration="4056000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42385000" />
+    <option name="totallyTimeSpent" value="46181000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20730397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29076397" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
@@ -380,7 +377,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29076397" sideWeight="0.49570355" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690992" sideWeight="0.49570355" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -403,9 +400,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29076397" sideWeight="0.49570355" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2690992" sideWeight="0.49570355" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22610097" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15520945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -462,6 +459,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -561,24 +559,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/caroussel/dodelte.php" />
-    <entry file="file://$PROJECT_DIR$/src/admin/article/doadd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/article/dodelete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/article/doupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -596,20 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/signin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/dosignin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/toto.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1659">
@@ -621,46 +591,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="21" column="56" lean-forward="false" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doadd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="44" column="17" lean-forward="false" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
-          <folding>
-            <marker date="1527102817860" expanded="true" signature="333:592" ph="INSERT INTO `carrousel`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8694">
-          <caret line="419" column="0" lean-forward="false" selection-start-line="419" selection-start-column="0" selection-end-line="420" selection-end-column="0" />
-          <folding>
-            <marker date="1527098180808" expanded="true" signature="456:475" ph="..." />
-            <marker date="1527098180808" expanded="true" signature="522:535" ph="..." />
-            <marker date="1527098180808" expanded="true" signature="627:729" ph="SELECT `id_a... articles" />
-            <marker date="1527098180808" expanded="true" signature="2791:2985" ph="SELECT `id_u... user" />
-            <marker date="1527098180808" expanded="true" signature="3779:3888" ph="SELECT `titl... articles" />
-            <marker date="1527098180808" expanded="true" signature="4460:4532" ph="DELETE FROM `articles`... " />
-            <marker date="1527098180808" expanded="true" signature="4751:4898" ph="SELECT `titl... articles" />
-            <marker date="1527098180808" expanded="true" signature="5709:5864" ph="UPDATE `articles`... " />
-            <marker date="1527098180808" expanded="true" signature="6232:6327" ph="SELECT id_pa... partner" />
-            <marker date="1527098180808" expanded="true" signature="7774:7879" ph="INSERT INTO `partner`... " />
-            <marker date="1527098180808" expanded="true" signature="8203:8328" ph="SELECT `id_p... partner" />
-            <marker date="1527098180808" expanded="true" signature="9137:9199" ph="DELETE FROM `partner`... " />
-            <marker date="1527098180808" expanded="true" signature="9972:10104" ph="SELECT `id_p... partner" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,14 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/article/addArticle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="12" lean-forward="false" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -710,20 +633,108 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doupdate.php">
+    <entry file="file://$PROJECT_DIR$/src/admin/signin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/dosignin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="9" column="38" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/article/doadd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+          <folding>
+            <marker date="1527107163707" expanded="true" signature="229:352" ph="INSERT INTO `articles`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/article/doupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="32" column="46" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="32" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/article/addArticle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/caroussel/update.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="9" lean-forward="false" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="41" column="66" lean-forward="false" selection-start-line="41" selection-start-column="66" selection-end-line="41" selection-end-column="66" />
           <folding>
-            <marker date="1527104165540" expanded="true" signature="236:327" ph="SELECT `id_c... carrousel" />
+            <marker date="1527109213410" expanded="true" signature="236:480" ph="SELECT `id_c... carrousel" />
+            <marker date="1527109213410" expanded="true" signature="236:507" ph="SELECT `id_c... carrousel" />
+            <marker date="1527109213410" expanded="true" signature="1728:1769" ph="..." />
+            <marker date="1527109213410" expanded="true" signature="1780:2167" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945">
+          <caret line="364" column="20" lean-forward="false" selection-start-line="364" selection-start-column="9" selection-end-line="364" selection-end-column="20" />
+          <folding>
+            <marker date="1527107010492" expanded="true" signature="456:475" ph="..." />
+            <marker date="1527107010492" expanded="true" signature="522:535" ph="..." />
+            <marker date="1527107010492" expanded="true" signature="626:728" ph="SELECT `id_a... articles" />
+            <marker date="1527107010492" expanded="true" signature="2790:2984" ph="SELECT `id_u... user" />
+            <marker date="1527107010492" expanded="true" signature="3777:3886" ph="SELECT `titl... articles" />
+            <marker date="1527107010492" expanded="true" signature="4458:4530" ph="DELETE FROM `articles`... " />
+            <marker date="1527107010492" expanded="true" signature="4749:4896" ph="SELECT `titl... articles" />
+            <marker date="1527107010492" expanded="true" signature="5707:5862" ph="UPDATE `articles`... " />
+            <marker date="1527107010492" expanded="true" signature="6230:6325" ph="SELECT id_pa... partner" />
+            <marker date="1527107010492" expanded="true" signature="7772:7877" ph="INSERT INTO `partner`... " />
+            <marker date="1527107010492" expanded="true" signature="8201:8326" ph="SELECT `id_p... partner" />
+            <marker date="1527107010492" expanded="true" signature="9135:9197" ph="DELETE FROM `partner`... " />
+            <marker date="1527107010492" expanded="true" signature="9970:10102" ph="SELECT `id_p... partner" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doadd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="43" column="48" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="43" selection-end-column="48" />
+          <folding>
+            <marker date="1527107783589" expanded="true" signature="333:592" ph="INSERT INTO `carrousel`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/caroussel/doupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <marker date="1527109912610" expanded="true" signature="233:522" ph="UPDATE `carrousel`... " />
+            <marker date="1527109912610" expanded="true" signature="239:487" ph="INSERT INTO `carrousel`... " />
           </folding>
         </state>
       </provider>

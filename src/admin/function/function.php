@@ -28,7 +28,7 @@ function getHeader()
     <title>toto</title>
 </head>
 <body>
-    <a href="../abort.php">deco</a>
+    <a href="./abort.php">deco</a>
 <?php
 }
 
@@ -145,7 +145,7 @@ function doSignIn(PDO $pdo)
         header("location: ./signin.php?error=erroraccount");
         exit;
     }
-    header("location: ../index.php");
+    header("location: ./index.php");
     exit;
 }
 

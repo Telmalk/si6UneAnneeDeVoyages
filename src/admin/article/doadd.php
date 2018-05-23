@@ -8,8 +8,8 @@
 
 session_start();
 require_once "../../include/connection.php";
-checkUser("../../signin.php");
-
+require_once "../function/function.php";
+checkUser("../signin.php");
 $sql = "
 INSERT INTO `articles`
 SET
