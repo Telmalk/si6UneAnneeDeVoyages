@@ -54,3 +54,14 @@ INSERT INTO `partner`
       `name` = 'toto',
       `logo` = 'titi',
       `categorie` = 'spa';
+
+
+SELECT
+      `id_partner`,
+      `name`,
+      `logo`,
+      `categorie`
+    FROM
+      `partner`
+    WHERE
+      `id_partner` = 1;

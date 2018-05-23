@@ -17,22 +17,25 @@
       <file leaf-file-name="function.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="353" column="1" lean-forward="true" selection-start-line="353" selection-start-column="1" selection-end-line="353" selection-end-column="1" />
+            <state relative-caret-position="651">
+              <caret line="397" column="29" lean-forward="false" selection-start-line="397" selection-start-column="29" selection-end-line="397" selection-end-column="29" />
               <folding>
-                <marker date="1527066164982" expanded="true" signature="329:431" ph="SELECT `id_a... articles" />
-                <marker date="1527066164982" expanded="true" signature="2461:2655" ph="SELECT `id_u... user" />
-                <marker date="1527066164982" expanded="true" signature="3448:3506" ph="SELECT `titl... articles" />
-                <marker date="1527066164982" expanded="true" signature="3448:3557" ph="SELECT `titl... articles" />
-                <marker date="1527066164982" expanded="true" signature="4128:4200" ph="DELETE FROM `articles`... " />
-                <marker date="1527066164982" expanded="true" signature="4418:4565" ph="SELECT `titl... articles" />
-                <marker date="1527066164982" expanded="true" signature="5375:5530" ph="UPDATE `articles`... " />
-                <marker date="1527066164982" expanded="true" signature="5897:5992" ph="SELECT id_pa... partner" />
-                <marker date="1527066164982" expanded="true" signature="6835:6880" ph="..." />
-                <marker date="1527066164982" expanded="true" signature="7297:7402" ph="INSERT INTO `partner`... " />
-                <marker date="1527066164982" expanded="true" signature="7726:7810" ph="SELECT `id_p... partner" />
-                <marker date="1527066164982" expanded="true" signature="7726:7851" ph="SELECT `id_p... partner" />
-                <marker date="1527066164982" expanded="true" signature="8587:8649" ph="DELETE FROM `partner`... " />
+                <marker date="1527070143761" expanded="true" signature="329:431" ph="SELECT `id_a... articles" />
+                <marker date="1527070143761" expanded="true" signature="2461:2655" ph="SELECT `id_u... user" />
+                <marker date="1527070143761" expanded="true" signature="3448:3506" ph="SELECT `titl... articles" />
+                <marker date="1527070143761" expanded="true" signature="3448:3557" ph="SELECT `titl... articles" />
+                <marker date="1527070143761" expanded="true" signature="4128:4200" ph="DELETE FROM `articles`... " />
+                <marker date="1527070143761" expanded="true" signature="4418:4565" ph="SELECT `titl... articles" />
+                <marker date="1527070143761" expanded="true" signature="5375:5530" ph="UPDATE `articles`... " />
+                <marker date="1527070143761" expanded="true" signature="5897:5992" ph="SELECT id_pa... partner" />
+                <marker date="1527070143761" expanded="true" signature="6835:6880" ph="..." />
+                <marker date="1527070143761" expanded="true" signature="7297:7402" ph="INSERT INTO `partner`... " />
+                <marker date="1527070143761" expanded="true" signature="7726:7810" ph="SELECT `id_p... partner" />
+                <marker date="1527070143761" expanded="true" signature="7726:7851" ph="SELECT `id_p... partner" />
+                <marker date="1527070143761" expanded="true" signature="8587:8649" ph="DELETE FROM `partner`... " />
+                <marker date="1527070143761" expanded="true" signature="9448:9580" ph="SELECT `id_p... partner" />
+                <marker date="1527070143761" expanded="true" signature="9920:9971" ph="..." />
+                <marker date="1527070143761" expanded="true" signature="9920:10005" ph="..." />
               </folding>
             </state>
           </provider>
@@ -88,6 +91,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="update.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin/partner/update.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="doadd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/admin/partner/doadd.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -101,8 +114,8 @@
       <file leaf-file-name="toto.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/toto.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1">
-              <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="482">
+              <caret line="66" column="23" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="66" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -113,16 +126,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="connection.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/include/connection.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="79" lean-forward="false" selection-start-line="8" selection-start-column="79" selection-end-line="8" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -170,11 +173,12 @@
         <option value="$PROJECT_DIR$/src/admin/doupdate.php" />
         <option value="$PROJECT_DIR$/src/include/connection.php" />
         <option value="$PROJECT_DIR$/src/admin/partner/showPartner.php" />
-        <option value="$PROJECT_DIR$/src/toto.sql" />
         <option value="$PROJECT_DIR$/src/admin/partner/doadd.php" />
         <option value="$PROJECT_DIR$/src/admin/partner/add.php" />
         <option value="$PROJECT_DIR$/src/admin/partner/delete.php" />
         <option value="$PROJECT_DIR$/src/admin/partner/dodelete.php" />
+        <option value="$PROJECT_DIR$/src/admin/partner/update.php" />
+        <option value="$PROJECT_DIR$/src/toto.sql" />
         <option value="$PROJECT_DIR$/src/admin/function/function.php" />
       </list>
     </option>
@@ -300,12 +304,12 @@
       <workItem from="1526989073956" duration="3697000" />
       <workItem from="1526997517858" duration="11330000" />
       <workItem from="1527012389544" duration="1893000" />
-      <workItem from="1527060568307" duration="4538000" />
+      <workItem from="1527060568307" duration="7371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22767000" />
+    <option name="totallyTimeSpent" value="25600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -531,22 +535,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/partner/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin/partner/doupdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/include/connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -603,32 +591,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/partner/doupdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin/partner/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="12" column="12" lean-forward="false" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/toto.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="482">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="58" selection-start-column="0" selection-end-line="66" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/admin/function/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="353" column="1" lean-forward="true" selection-start-line="353" selection-start-column="1" selection-end-line="353" selection-end-column="1" />
+        <state relative-caret-position="651">
+          <caret line="397" column="29" lean-forward="false" selection-start-line="397" selection-start-column="29" selection-end-line="397" selection-end-column="29" />
           <folding>
-            <marker date="1527066164982" expanded="true" signature="329:431" ph="SELECT `id_a... articles" />
-            <marker date="1527066164982" expanded="true" signature="2461:2655" ph="SELECT `id_u... user" />
-            <marker date="1527066164982" expanded="true" signature="3448:3506" ph="SELECT `titl... articles" />
-            <marker date="1527066164982" expanded="true" signature="3448:3557" ph="SELECT `titl... articles" />
-            <marker date="1527066164982" expanded="true" signature="4128:4200" ph="DELETE FROM `articles`... " />
-            <marker date="1527066164982" expanded="true" signature="4418:4565" ph="SELECT `titl... articles" />
-            <marker date="1527066164982" expanded="true" signature="5375:5530" ph="UPDATE `articles`... " />
-            <marker date="1527066164982" expanded="true" signature="5897:5992" ph="SELECT id_pa... partner" />
-            <marker date="1527066164982" expanded="true" signature="6835:6880" ph="..." />
-            <marker date="1527066164982" expanded="true" signature="7297:7402" ph="INSERT INTO `partner`... " />
-            <marker date="1527066164982" expanded="true" signature="7726:7810" ph="SELECT `id_p... partner" />
-            <marker date="1527066164982" expanded="true" signature="7726:7851" ph="SELECT `id_p... partner" />
-            <marker date="1527066164982" expanded="true" signature="8587:8649" ph="DELETE FROM `partner`... " />
+            <marker date="1527070143761" expanded="true" signature="329:431" ph="SELECT `id_a... articles" />
+            <marker date="1527070143761" expanded="true" signature="2461:2655" ph="SELECT `id_u... user" />
+            <marker date="1527070143761" expanded="true" signature="3448:3506" ph="SELECT `titl... articles" />
+            <marker date="1527070143761" expanded="true" signature="3448:3557" ph="SELECT `titl... articles" />
+            <marker date="1527070143761" expanded="true" signature="4128:4200" ph="DELETE FROM `articles`... " />
+            <marker date="1527070143761" expanded="true" signature="4418:4565" ph="SELECT `titl... articles" />
+            <marker date="1527070143761" expanded="true" signature="5375:5530" ph="UPDATE `articles`... " />
+            <marker date="1527070143761" expanded="true" signature="5897:5992" ph="SELECT id_pa... partner" />
+            <marker date="1527070143761" expanded="true" signature="6835:6880" ph="..." />
+            <marker date="1527070143761" expanded="true" signature="7297:7402" ph="INSERT INTO `partner`... " />
+            <marker date="1527070143761" expanded="true" signature="7726:7810" ph="SELECT `id_p... partner" />
+            <marker date="1527070143761" expanded="true" signature="7726:7851" ph="SELECT `id_p... partner" />
+            <marker date="1527070143761" expanded="true" signature="8587:8649" ph="DELETE FROM `partner`... " />
+            <marker date="1527070143761" expanded="true" signature="9448:9580" ph="SELECT `id_p... partner" />
+            <marker date="1527070143761" expanded="true" signature="9920:9971" ph="..." />
+            <marker date="1527070143761" expanded="true" signature="9920:10005" ph="..." />
           </folding>
         </state>
       </provider>
