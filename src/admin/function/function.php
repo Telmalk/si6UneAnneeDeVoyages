@@ -18,7 +18,7 @@ function checkUser(string $signWay)
         exit;
     }
 }
-function getHeader()
+function getHeader(string $way)
 {
     ?>
     <!DOCTYPE html>
@@ -26,10 +26,18 @@ function getHeader()
 <head>
     <meta charset="UTF-8">
     <title>toto</title>
+    <link href="<?=$way?>bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="<?=$way?>bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 </head>
 <body>
-    <a href="./abort.php">deco</a>
-<?php
+    <nav class="container nav" style="margin-bottom: 50px;">
+        <a class="nav-item" href="<?=$way?>abort.php"><button class="btn btn-danger">Déconnexion</button></a>
+        <a class="nav-item" href="<?=$way?>article/showArticle.php"><button class="btn btn-success"><strong>Gerer les articles</strong></button></a>
+        <a class="nav-item" href="<?=$way?>partner/showPartner.php"><button class="btn btn-success"><strong>Gerer les partenaires</strong></button></a>
+        <a class="nav-item" href="<?=$way?>caroussel/showCompany.php"><button class="btn btn-success"><strong>Gerer les activitées</strong></button></a><br/>
+    </nav>
+
+    <?php
 }
 
 function getContentAdmin(PDO $pdo)
@@ -95,7 +103,7 @@ function formSignIn()
 {
     if (!isset($_SESSION['log'])) {
         ?>
-        <form method="post" action="dosignin.php">
+        <form method="post" action="dosignin.php" class="container">
             <input type="text" name="username" placeholder="username">
             <input type="password" name="password" placeholder="password">
             <button type="submit">Valider</button>
@@ -260,10 +268,31 @@ function showListPartner(PDO $pdo)
     $stmt->execute();
     $nbFind = 0;
     ?>
-    <a href="add.php">Ajouter un partenaire</a>
+    <div class="container">
+        <a href="add.php"><button class="btn btn-primary">Ajouter un partenaire</button></a>
+        <a href="../index.php"><button class="btn btn-default">Retour a la home</button></a>
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">name</th>
+                <th scope="col">type</th>
+                <th scope="col">Modifier</th>
+                <th scope="col">Suprimmer</th>
+            </tr>
+            </thead>
+            <tbody>
     <?php
+    $nbElem = 1;
     while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
-        <p>partenaire: <?=$row['name']?> type: <?=$row['categorie']?> <a href="update.php?id=<?=$row['id_partner']?>">Modifer</a> <a href="delete.php?id=<?=$row['id_partner']?>">Suprimmer</a></p>
+        <tr>
+            <th scope="row"><?=$row['id_partner']?></th>
+            <td><?=$row['name']?></td>
+            <td><?=$row['categorie']?></td>
+            <td><a href="update.php?id=<?=$row['id_partner']?>">Modifer</a></td>
+            <td><a href="delete.php?id=<?=$row['id_partner']?>">Suprimmer</a></td>
+        </tr>
         <?php
             $nbFind++;
             endwhile;
@@ -272,7 +301,7 @@ function showListPartner(PDO $pdo)
                 <?php
             endif;
             ?>
-    <a href="../index.php">Retour a la home</a>
+    </div>
     <?php
 }
 

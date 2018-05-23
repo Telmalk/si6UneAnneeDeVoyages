@@ -8,7 +8,7 @@
 session_start();
 require_once "../../include/connection.php";
 require_once "../function/function.php";
-checkUser("../../signin.php");
+checkUser("../signin.php");
 $sql = "
 SELECT
     `id_carrousel`,
@@ -26,11 +26,13 @@ if ($row === false) {
     header("location: ./showCompany.php?error=nodatatodelete");
     exit;
 }
-getHeader();
+getHeader("../");
 ?>
+<div class="container">
 <a href="./showCompany.php">Retour a la list des etablissement</a>
 <p>Etes vous sur de vouloir suprimmer l'etablissement <?=$row['etablissement']?></p>
-<a href="dodelete.php?id=<?=$row['id_carrousel']?>"><button>Oui</button></a>
-<a href="./showCompany.php"><button>Non</button></a>
+<a href="dodelete.php?id=<?=$row['id_carrousel']?>"><button class="btn btn-success">Oui</button></a>
+<a href="./showCompany.php"><button class="btn btn-danger">Non</button></a>
+</div>
 <?php
 getFooter();

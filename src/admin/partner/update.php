@@ -9,6 +9,8 @@
 session_start();
 require_once "../../include/connection.php";
 require_once "../function/function.php";
+checkUser("../signin.php");
+
 getHeader();
 formUpdatePartner($pdo);
 getFooter();

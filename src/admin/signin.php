@@ -9,7 +9,7 @@
 session_start();
 require_once './function/function.php';
 
-getHeader();
+getHeader("./");
 if (isset($_GET["error"])) {
     echo $_SESSION["error"]["log"];
 }
