@@ -51,9 +51,10 @@ table {
   display: none;
   justify-content: flex-end;
   flex-direction: column;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
   font-size: 1rem;
   padding-top: 40px;
+  text-transform: uppercase;
 }
 @media (min-width: 949px) {
   .navbar-ul {
@@ -123,27 +124,26 @@ table {
 }
 
 .logo {
-  position: fixed;
+  position: absolute;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 10%;
 }
 
 .text {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   color: white;
   font-family: "Arial", sans-serif;
-  text-align: center;
 }
 .text-bloc {
-  width: 90%;
+  width: 80%;
+  padding-left: 10%;
 }
 .text-bloc-title {
   width: 100%;
   margin-top: 25vh;
   font-size: 2rem;
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
 }
 @media (min-width: 600px) {
   .text-bloc-title {
@@ -151,19 +151,42 @@ table {
     font-size: 3rem;
   }
 }
+.text-bloc :hover {
+  color: deepskyblue;
+}
 .text-bloc-desc {
   width: 100%;
-  margin-top: 20vh;
-  font-size: 1rem;
+  margin-top: 3vh;
+  line-height: 1.5em;
+  font-size: 1.5rem;
+  font-family: "Playfair Display Black", serif;
+  color: #92F4E2;
 }
 @media (min-width: 600px) {
   .text-bloc-desc {
     font-size: 2rem;
   }
 }
+.text-bloc :hover {
+  color: #92F4E2;
+}
 .text-social {
-  width: 10%;
-  background-color: pink;
+  display: none;
+}
+@media (min-width: 949px) {
+  .text-social {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+}
+.text-social-link {
+  line-height: 5em;
+  margin: 0 auto;
+}
+.text-social-link-icon {
+  width: 30px;
 }
 
 .modal {
@@ -204,7 +227,8 @@ table {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 40vh;
-  font-family: "Helvetica", sans-serif;
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
+  text-transform: uppercase;
   font-size: 1.2rem;
 }
 .modal-content-li {
@@ -229,9 +253,97 @@ table {
   transition: right 0.5s ease;
 }
 
+.fourcards {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 949px) {
+  .fourcards {
+    flex-direction: row;
+    width: 100%;
+    height: 75vh;
+    margin: -140px auto 0 auto;
+  }
+}
+@media (min-width: 1200px) {
+  .fourcards {
+    width: 80%;
+  }
+}
+.fourcards-card {
+  width: 100%;
+  background-color: white;
+}
+@media (min-width: 949px) {
+  .fourcards-card {
+    width: 23%;
+    margin: 0 1%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.4);
+    height: 90%;
+  }
+}
+.fourcards-card-img {
+  margin-top: 3vh;
+}
+.fourcards-card-title {
+  text-align: center;
+  line-height: 3em;
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
+  font-size: 1.1rem;
+}
+.fourcards-card :hover {
+  color: deepskyblue;
+}
+.fourcards-card-desc {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  font-family: "Playfair Display Regular", serif;
+  line-height: 1.6em;
+  color: #979797;
+}
+@media (min-width: 600px) {
+  .fourcards-card-desc {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 949px) {
+  .fourcards-card-desc {
+    width: 90%;
+    margin: 0;
+  }
+}
+.fourcards-card :hover {
+  color: deepskyblue;
+}
+
+.centerImg {
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tw Cen MT Condensed Extra Bold"), url("../fonts/TCCEB.woff") format("woff");
+}
+@font-face {
+  font-family: "Playfair Display Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Playfair Display Black"), url("../fonts/PlayfairDisplay-Black.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Playfair Display Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Playfair Display Regular"), url("../fonts/PlayfairDisplay-Regular.ttf") format("ttf");
+}
 body {
   position: relative;
   z-index: 0;
 }
-
-/*# sourceMappingURL=style.css.map */

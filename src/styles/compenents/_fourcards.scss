@@ -1,0 +1,61 @@
+.fourcards {
+  display: flex;
+  flex-direction: column;
+  @include for-size(tablet-landscape-up) {
+    flex-direction: row;
+    width: 100%;
+    height: 75vh;
+    margin: -140px auto 0 auto;
+  }
+  @include for-size(desktop-up){
+    width: 80%;
+  }
+  &-card {
+    width: 100%;
+    background-color: white;
+    @include for-size(tablet-landscape-up) {
+      width: 23%;
+      margin: 0 1%;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.40);
+      height: 90%;
+    }
+    &-img {
+      margin-top: 3vh;
+    }
+    &-title {
+      text-align: center;
+      line-height: 3em;
+      font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+      font-size: 1.1rem;
+    }
+    :hover {
+      color: deepskyblue;
+    }
+    &-desc {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-top: 10px;
+      font-family: 'Playfair Display Regular', serif;
+      line-height: 1.6em;
+      color: #979797;
+      @include for-size(tablet-portrait-up){
+        width: 80%;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      @include for-size(tablet-landscape-up){
+        width: 90%;
+        margin: 0;
+      }
+    }
+    :hover {
+      color: deepskyblue;
+    }
+  }
+}
+
+.centerImg {
+  display: flex;
+  justify-content: center;
+}
