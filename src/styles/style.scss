@@ -3,6 +3,7 @@
 
 @import "./compenents/reset";
 @import "./compenents/header";
+@import "./compenents/fourcards";
 
 @font-face {
 font-family: 'Tw Cen MT Condensed Extra Bold';
@@ -16,6 +17,13 @@ font-family: 'Playfair Display Black';
 font-style: normal;
 font-weight: normal;
 src: local('Playfair Display Black'), url('../fonts/PlayfairDisplay-Black.ttf') format('ttf');
+}
+
+@font-face {
+font-family: 'Playfair Display Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Playfair Display Regular'), url('../fonts/PlayfairDisplay-Regular.ttf') format('ttf');
 }
 
 body {
