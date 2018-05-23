@@ -3,3 +3,8 @@
 
 @import "./compenents/reset";
 @import "./compenents/header";
+
+body {
+  position: relative;
+  z-index: 0;
+}

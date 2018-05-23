@@ -54,11 +54,14 @@
   var modal = document.querySelector('.modal');
   var modalOverlay = document.querySelector('.modal-overlay');
   menuImg.addEventListener('click', function() {
-    modal.style.display = "block";
+    console.log("toto");
+    modal.classList.add('activeModal');
+    modalOverlay.style.display = "block";
   });
   modalOverlay.addEventListener('click', function() {
-    modal.style.display = "none";
-  })
+      modal.classList.remove('activeModal');
+      modalOverlay.style.display = "none";
+  });
 </script>
 
 </html>
