@@ -9,7 +9,7 @@
 session_start();
 require_once "../function/function.php";
 
-checkUser();
+checkUser("../signin.php");
 getHeader();
 formAddArticle();
 getFooter();
