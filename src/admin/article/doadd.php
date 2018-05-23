@@ -7,7 +7,8 @@
  */
 
 session_start();
-require_once "../include/connection.php";
+require_once "../../include/connection.php";
+checkUser("../../signin.php");
 
 $sql = "
 INSERT INTO `articles`
@@ -27,5 +28,5 @@ $stmt->bindValue(":today", $_POST['today']);
 $stmt->bindValue(":id_user", intval($_SESSION['user']['id']));
 $stmt->execute();
 
-header("location: ./index.php");
+header("location: ../index.php");
 exit;
