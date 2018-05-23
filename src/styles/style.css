@@ -2,31 +2,223 @@ html {
   font-size: 62.5%;
 }
 
-.test-1 {
-  width: 100vh;
-  height: 100vh;
-  background: aqua;
-}
-@media (min-width: 1200px) {
-  .test-1 {
-    background: red;
-  }
-}
-
-div {
-  background: red;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-h1 {
-  color: red;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 
 body {
-  background: purple;
+  line-height: 1;
 }
 
-h2 {
-  color: aliceblue;
+ol, ul {
+  list-style: none;
 }
 
-/*# sourceMappingURL=style.css.map */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.navbar-ul {
+  display: none;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1rem;
+  padding-top: 40px;
+}
+@media (min-width: 949px) {
+  .navbar-ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-ul {
+    font-size: 1.2rem;
+  }
+}
+.navbar-ul-li {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 949px) {
+  .navbar-ul-li {
+    width: 20%;
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-ul-li {
+    width: 15%;
+    padding: 0;
+  }
+}
+.navbar-ul-li a {
+  color: white;
+  text-decoration: none;
+}
+.navbar-ul :hover {
+  color: deepskyblue;
+}
+.navbar-toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (min-width: 949px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+.navbar-toggle-burger {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.active {
+  display: block;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/rana.png");
+  background-size: cover;
+  background-position: center;
+  /*  @include for-size(tablet-portrait-up){
+      height: 100vh;
+    }*/
+}
+
+.logo {
+  position: fixed;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+}
+.text-bloc {
+  width: 90%;
+}
+.text-bloc-title {
+  width: 100%;
+  margin-top: 25vh;
+  font-size: 2rem;
+}
+@media (min-width: 600px) {
+  .text-bloc-title {
+    margin-top: 30vh;
+    font-size: 3rem;
+  }
+}
+.text-bloc-desc {
+  width: 100%;
+  margin-top: 20vh;
+  font-size: 1rem;
+}
+@media (min-width: 600px) {
+  .text-bloc-desc {
+    font-size: 2rem;
+  }
+}
+.text-social {
+  width: 10%;
+  background-color: pink;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 600px) {
+  .modal {
+    width: 40%;
+    background-color: black;
+    background: rgba(0, 0, 0, 0.6);
+    margin-left: 60%;
+  }
+}
+.modal-overlay {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+@media (min-width: 600px) {
+  .modal-overlay {
+    background: rgba(0, 0, 0, 0);
+  }
+}
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40vh;
+  font-family: "Helvetica", sans-serif;
+  font-size: 1.2rem;
+}
+.modal-content-li {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  height: 5vh;
+}
+.modal-content-li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (min-width: 949px) {
+  .hide {
+    display: none;
+  }
+}
