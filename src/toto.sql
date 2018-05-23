@@ -48,8 +48,9 @@ FROM
 WHERE
   `id_article` = 4
 
-UPDATE `articles`
-SET
-  `title` = 'luuuuu'
-WHERE
-`id_article` = 2;
+
+INSERT INTO `partner`
+    SET
+      `name` = 'toto',
+      `logo` = 'titi',
+      `categorie` = 'spa';

@@ -59,6 +59,8 @@ function getContentAdmin(PDO $pdo)
         }
     ?>
         </table>
+        <a href="./partner/add.php">Ajouter un partenaire</a><br/>
+        <a href="./partner/showPartner.php">Liste des partenaires</a>
     <?php
 }
 
@@ -228,6 +230,71 @@ function doUpdate(PDO $pdo)
     $stmt->execute();
     header("location: ./index.php");
     exit;
+}
+
+function showListPartner(PDO $pdo)
+{
+    $sql = "
+    SELECT
+        id_partner,
+        name,
+        logo,
+        categorie
+    FROM
+      partner;
+    ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $nbFind = 0;
+    ?>
+    <a href="add.php">Ajouter un partenaire</a>
+    <?php
+    while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) : ?>
+        <p>partenaire: <?=$row['name']?> type: <?=$row['categorie']?> <a href="update.php?id=<?=$row['id_partner']?>">Modifer</a> <a href="delete.php?id=<?=$row['id_partner']?>">Suprimmer</a></p>
+        <?php
+            $nbFind++;
+            endwhile;
+            if ($nbFind === 0) : ?>
+                <p>Aucun partenaire pour l'instant</p>
+                <?php
+            endif;
+}
+
+function formPartner()
+{
+    ?>
+    <form method="post" action="doadd.php">
+        <label>Nom du partenaire : <input type="text" name="name"></label>
+        <label>Logo du partenaire : <input type="text" name="logo"></label>
+        <label>Type de partenaire:
+            <select name="category">
+                <option value="spa">spa</option>
+                <option value="hotel">hotel</option>
+                <option value="Compagnie aerienne">Compagnie aerienne</option>
+                <option value="Restaurant">Restaurant</option>
+            </select>
+        </label>
+        <button type="submit">Valider</button>
+    </form>
+    <?php
+}
+
+function addPartner(PDO $pdo)
+{
+    $sql = "
+    INSERT INTO `partner`
+    SET
+      `name` = :dname,
+      `logo` = :logo,
+      `categorie` = :categorie;
+    ";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":dname", $_POST['name']);
+    $stmt->bindValue(':logo', $_POST['logo']);
+    $stmt->bindValue(':categorie', $_POST['category']);
+    $stmt->execute();
+    header("location: ./showPartner.php");
 }
 
 function getFooter()
