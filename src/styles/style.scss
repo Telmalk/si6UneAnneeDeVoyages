@@ -3,3 +3,17 @@
 
 @import "./compenents/reset";
 @import "./compenents/header";
+
+@font-face {
+font-family: 'Tw Cen MT Condensed Extra Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Tw Cen MT Condensed Extra Bold'), url('../fonts/TCCEB.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Playfair Display Black';
+font-style: normal;
+font-weight: normal;
+src: local('Playfair Display Black'), url('../fonts/PlayfairDisplay-Black.ttf') format('ttf');
+}
