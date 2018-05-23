@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>toto</title>
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <meta charset="UTF-8">
+  <title>toto</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
 </head>
+
 <body>
-    <div class="test">
-        <div class="test-1">
-            <p>toto</p>
+  <div class="background">
+    <header>
+      <img class="logo" src="img/logo.png" />
+      <nav class="navbar">
+        <div class="navbar-toggle">
+          <img class="navbar-toggle-burger" src="img/menu.svg" />
         </div>
-    </div>
+        <ul class="navbar-ul">
+          <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
+          <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
+          <li class="navbar-ul-li"><a href="#">À propos</a></li>
+          <li class="navbar-ul-li"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hide">
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <ul class="modal-content">
+            <li class="modal-content-li"><a href="#">Abonnement</a></li>
+            <li class="modal-content-li"><a href="#">Fiches pratiques</a></li>
+            <li class="modal-content-li"><a href="#">À propos</a></li>
+            <li class="modal-content-li"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="text">
+      <div class="text-bloc">
+        <h1 class="text-bloc-title">Une année de voyages</h1>
+        <p class="text-bloc-desc">
+          Des voyages testés ... Des idées pour partir toute l'année !
+        </p>
+      </div>
+      <div class="text-social">
+        .
+      </div>
+
+    </section>
+  </div>
 </body>
+
+<script type="text/javascript">
+  var menuImg = document.querySelector('.navbar-toggle-burger');
+  var modal = document.querySelector('.modal');
+  var modalOverlay = document.querySelector('.modal-overlay');
+  menuImg.addEventListener('click', function() {
+    modal.style.display = "block";
+  });
+  modalOverlay.addEventListener('click', function() {
+    modal.style.display = "none";
+  })
+</script>
+
 </html>
