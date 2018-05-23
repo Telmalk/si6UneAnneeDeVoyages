@@ -126,12 +126,11 @@ table {
 .logo {
   position: fixed;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 10%;
 }
 
 .text {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   color: white;
   font-family: "Arial", sans-serif;
@@ -152,13 +151,14 @@ table {
     font-size: 3rem;
   }
 }
-.text-bloc-title :hover {
+.text-bloc :hover {
   color: deepskyblue;
 }
 .text-bloc-desc {
   width: 100%;
-  margin-top: 20vh;
-  font-size: 1rem;
+  margin-top: 3vh;
+  line-height: 1.5em;
+  font-size: 1.5rem;
   font-family: "Playfair Display Black", serif;
   color: #92F4E2;
 }
@@ -187,11 +187,12 @@ table {
 }
 
 .modal {
-  display: none;
+  display: block;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: -400px;
+  transition: right 0.5s ease;
   height: 100%;
 }
 @media (min-width: 600px) {
@@ -199,10 +200,10 @@ table {
     width: 40%;
     background-color: black;
     background: rgba(0, 0, 0, 0.6);
-    margin-left: 60%;
   }
 }
 .modal-overlay {
+  display: none;
   position: fixed;
   z-index: -1;
   top: 0;
@@ -229,7 +230,7 @@ table {
 }
 .modal-content-li {
   text-align: center;
-  width: 100%;
+  width: 300px;
   padding: 10px;
   height: 5vh;
 }
@@ -244,6 +245,11 @@ table {
   }
 }
 
+.activeModal {
+  right: 0;
+  transition: right 0.5s ease;
+}
+
 @font-face {
   font-family: "Tw Cen MT Condensed Extra Bold";
   font-style: normal;
@@ -255,4 +261,8 @@ table {
   font-style: normal;
   font-weight: normal;
   src: local("Playfair Display Black"), url("../fonts/PlayfairDisplay-Black.ttf") format("ttf");
+}
+body {
+  position: relative;
+  z-index: 0;
 }

@@ -69,12 +69,11 @@
 .logo {
   position: fixed;
   padding-top: 30px;
-  padding-left: 50px;
+  padding-left: 10%;
 }
 
 .text {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   color: white;
   font-family: 'Arial', sans-serif;
@@ -90,14 +89,15 @@
         margin-top: 30vh;
         font-size: 3rem;
       }
-      :hover {
-        color: deepskyblue;
-      }
+    }
+    :hover {
+      color: deepskyblue;
     }
     &-desc {
       width: 100%;
-      margin-top: 20vh;
-      font-size: 1rem;
+      margin-top: 3vh;
+      line-height: 1.5em;
+      font-size: 1.5rem;
       font-family: 'Playfair Display Black', serif;
       color: #92F4E2;
       @include for-size(tablet-portrait-up){
@@ -124,19 +124,20 @@
 }
 
 .modal {
-  display: none;
+  display: block;
+  width: 100%;
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: -400px;
+  transition: right .5s ease;
   height: 100%;
   @include for-size(tablet-portrait-up) {
     width: 40%;
     background-color: black;
     background: rgba(0, 0, 0, 0.6);
-    margin-left: 60%;
   }
   &-overlay {
+    display: none;
     position: fixed;
     z-index: -1;
     top: 0;
@@ -160,7 +161,7 @@
     font-size: 1.2rem;
     &-li {
       text-align: center;
-      width: 100%;
+      width: 300px;
       padding: 10px;
       height: 5vh;
       & a {
@@ -175,4 +176,9 @@
   @include for-size(tablet-landscape-up){
     display: none;
   }
+}
+
+.activeModal {
+  right: 0;
+  transition: right .5s ease;
 }

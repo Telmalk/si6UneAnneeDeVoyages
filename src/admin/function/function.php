@@ -345,6 +345,64 @@ function doDeletePartner(PDO $pdo)
     header("location: ./showPartner.php");
 }
 
+function whoSelected(string $whatCategory)
+{
+    $categoryArray = ["spa", "hotel", "compagnie aerienne", "restaurant"];
+    $optionArray = [];
+    $index = 0;
+    while ($index <= sizeof($categoryArray)) {
+        if ($categoryArray[$index] === $whatCategory) {
+            $option = "<option selected value='".$whatCategory.".$whatCategory.</option>";
+            $optionArray[] = $option;
+        } else {
+            $option = "<option value='".$whatCategory.".$whatCategory.</option>";
+            $optionArray[] = $option;
+        }
+        $index++;
+    }
+    return $optionArray;
+}
+
+function formUpdatePartner(PDO $pdo)
+{
+    $sql = "
+   SELECT
+      `id_partner`,
+      `name`,
+      `logo`,
+      `categorie`
+    FROM
+      `partner`
+    WHERE
+      `id_partner` = :id;
+";
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id", $_GET['id']);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row === false) {
+        $_SESSION["error"]["data"] = "une erreur est survenu";
+        //header('location: ./showPartner.php?error=nodatatoedit');
+        //exit;
+    }
+    ?>
+    <form>
+        <label>Entreprise partenaire: <input type="text" name="name" value="<?=$row['name']?>"></label>
+        <label>Logo partneaire url: <input type="text" name="logo" value="<?=$row['logo']?>"></label>
+        <label><select name="category">
+            <?php
+                $optionArray = whoSelected($row["categorie"]);
+                $index = 0;
+                while ($index < sizeof($optionArray)) {
+                    echo $optionArray[$index];
+                    $index++;
+                }
+            ?>
+        </select>
+    </form>
+    <?php
+}
+
 function getFooter()
 {
 ?>
