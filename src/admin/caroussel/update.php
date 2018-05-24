@@ -42,7 +42,7 @@ if ($row === false) {
 
 <form class="container" method="post" action="doupdate.php?img=<?=$row['img']?>&amp;id=<?=$row['id_carrousel']?>"  enctype="multipart/form-data">
     <label>Titre du Post: <input type="text" name="title" value="<?=$row['title']?>"></label><br />
-    <label>imge du post: <input type="file" name="img" value="img.jpg"></label> <br/>
+    <label>imge du post: <input type="file" name="img"></label> <br/>
     <label>Ville du post: <input type="text" name="citie" value="<?=$row['city']?>"></label> <br/>
     <label>Nom de l'etablissement <input type="text" name="name" value="<?=$row['etablissement']?>"></label><br/>
     <label>Adresse de l'etablissment <input type="text" name="adress" value="<?=$row['adress']?>"></label><br/>

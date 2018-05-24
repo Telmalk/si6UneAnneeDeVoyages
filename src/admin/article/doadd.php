@@ -20,7 +20,7 @@ SET
 `id_user` = :id_user;
 ";
 
-if (saveFile("../../img/articles","img") !== 0) {
+if (saveFile("../../img/articles/","img") !== 0) {
     header("location: ./showArticle.php?error=nopictoadd");
     exit;
 }

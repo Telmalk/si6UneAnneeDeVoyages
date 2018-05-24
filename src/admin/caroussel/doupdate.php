@@ -35,13 +35,14 @@ $stmt->bindValue(":adress", htmlentities($_POST['adress']));
 $stmt->bindValue(":phone", htmlentities($_POST['phone']));
 $stmt->bindValue(":url", htmlentities($_POST['url_site']));
 $stmt->bindValue(":category", htmlentities($_POST['category']));
+$stmt->bindValue(":id", $_GET['id']);
 if (!empty($_FILES['img']['name']) && $_FILES['img']['name'] !== $_GET['img']) {
-    saveFile();
-    $stmt->bindValue(":img",htmlentities($_FILES["img"]['name']));
+    unlink("../../img/fiche_technique/" . $_GET['img']);
+    saveFile("../../img/fiche_technique/", "img");
+    $stmt->bindValue(":img", htmlentities($_FILES["img"]['name']));
 } else {
     $stmt->bindValue(":img", htmlentities($_GET['img']));
 }
-$stmt->bindValue(":id", htmlentities($_GET['id']));
 $stmt->execute();
 
 header("location: ./showCompany.php");

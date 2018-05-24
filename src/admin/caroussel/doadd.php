@@ -11,9 +11,8 @@ require_once "../../include/connection.php";
 require_once "../function/function.php";
 checkUser("../../signin.php");
 
-//var_dump($_POST);
 
-if (saveFile() != 0) {
+if (saveFile("../../img/fiche_technique/", "img") != 0) {
    header("location: ./add.php?error");
    exit;
 }
