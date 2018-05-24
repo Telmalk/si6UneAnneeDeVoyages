@@ -1,0 +1,87 @@
+@media (max-width: 1099px) {
+  .reading-button {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+    padding-bottom: 16px;
+    font-family: "Tw Cen MT Condensed";
+    font-size: 20px;
+    text-decoration: none;
+    color: #767676;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .reading-border {
+    border-bottom: 2px solid #D8D8D8;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .reading-player {
+    margin-top: 20px;
+    width: 85vw;
+    height: 90vh;
+  }
+  .reading-seeMore {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .reading-buttonSection {
+    padding-top: 10px;
+  }
+  .reading-button {
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: "Tw Cen MT Condensed";
+    font-size: 20px;
+    text-decoration: none;
+    color: #767676;
+  }
+  .reading-border {
+    border-bottom: 2px solid #D8D8D8;
+    width: 50%;
+    margin: 20px auto 0 auto;
+  }
+  .reading-player {
+    width: 85vw;
+    height: 80vh;
+  }
+  .reading-seeMore {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    margin-right: 110px;
+  }
+}
+
+.reading-box {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.reading-buttonBox {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-active {
+  text-decoration: none;
+  color: #ffffff;
+  background: #15DAB6;
+  padding: 11px 16px 11px 16px;
+}
+
+.reading-seeMoreLink {
+  text-decoration: none;
+  color: #ffffff;
+  background: #15DAB6;
+  padding: 11px 16px 11px 16px;
+  font-family: "Tw Cen MT Condensed";
+  text-transform: uppercase;
+  font-size: 24px;
+}
