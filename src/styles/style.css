@@ -742,11 +742,14 @@ body {
 }
 
 @media (min-width: 1100px) {
+  .top-imgContainer {
+    position: relative;
+  }
   .top-nb {
     border-radius: 30px;
     box-shadow: 0 0 10px 2px #000;
-    left: 125px;
-    top: 205px;
+    left: -25px;
+    top: -25px;
     z-index: 47;
     border: 1px solid #000;
     width: 50px;
