@@ -781,6 +781,8 @@ body {
     text-decoration: none;
   }
   .top-seeMore {
+    display: flex;
+    justify-content: flex-end;
     margin-top: 60px;
     margin-right: 150px;
   }
