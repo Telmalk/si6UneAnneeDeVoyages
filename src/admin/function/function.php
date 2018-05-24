@@ -227,7 +227,7 @@ function formUpdate(PDO $pdo)
     }
     ?>
     <div class="container">
-    <a style="margin-bottom: 20px;" class="btn btn-primary" href="../index.php">Retour a la home</a>
+    <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showArticle.php">Retour a la home</a>
     <form method="post" action="doupdate.php?id=<?=$_GET['id']?>&amp;img=<?=$row['img']?>" enctype="multipart/form-data">
         <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label> <br/>
         <label>Modifier l'image <input type="file" name="img"></label> <br/>
@@ -251,9 +251,15 @@ function doUpdate(PDO $pdo)
     ";
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":title" , $_POST['title']);
-    $stmt->bindValue(":img" , $_POST['img']);
     $stmt->bindValue(":content" , $_POST['content']);
     $stmt->bindValue(":id_article", $_GET["id"]);
+    if (!empty($_FILES['img']['name']) && $_FILES['img']['name'] !== $_GET['img']) {
+        unlink("../../img/articles/" . $_GET['img']);
+        saveFile("../../img/articles/", "img");
+        $stmt->bindValue(":img", htmlentities($_FILES["img"]['name']));
+    } else {
+        $stmt->bindValue(":img", htmlentities($_GET['img']));
+    }
     $stmt->execute();
     header("location: ./showArticle.php");
     exit;
