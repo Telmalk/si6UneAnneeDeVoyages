@@ -1,6 +1,8 @@
-.footer {
+.bot {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  box-shadow: 1px 5px 5px 0 rgba(0,0,0,0.20);
   &-contact {
     width: 100%;
     font-family: 'Tw Cen MT Bold', sans-serif;
@@ -97,9 +99,6 @@
         & input {
           margin-left: 20px;
         }
-        :checked {
-          border: 3px solid black;
-        }
         & label {
           padding-left: 10px;
           color: #767676;
@@ -187,14 +186,15 @@ input {
 
 .send {
   position: absolute;
-  bottom: 3vh;
+  bottom: 0;
   right: 0;
   @include for-size(tablet-portrait-up){
     right: 5%;
   }
-//  margin-left: 42%;
-//  margin-top: 25%;
-
+  @include for-size(tablet-landscape-up){
+    right: 10%;
+    bottom: 5%;
+  }
   & img {
     width: 70px;
   }
