@@ -84,5 +84,14 @@ FROM articles
 ORDER BY date DESC
 
 
-SELECT * FROM articles ORDER BY id_article DESC LIMIT 0, 1
+SELECT * FROM articles ORDER BY id_article DESC LIMIT 0, 1;
+
+SELECT
+  `title`,
+  `spawnDate`,
+  `description`
+FROM
+articles
+WHERE
+`id_article` = 26;
 

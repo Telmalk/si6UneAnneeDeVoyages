@@ -23,16 +23,18 @@ function getHeader()
     <body>
     <header>
         <div class="top-background">
-            <img class="logo" src="img/logo.png" />
+            <a href="./index.php"><img class="logo" src="img/logo.png" /></a>
             <nav class="navbar">
                 <div class="navbar-toggle">
                     <img class="navbar-toggle-burger" src="img/menu.svg" />
                 </div>
                 <ul class="navbar-ul">
                     <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
+                    <li class="navbar-ul-li"><a href="#">Notre Sélection</a></li>
                     <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
-                    <li class="navbar-ul-li"><a href="#">À propos</a></li>
+                    <li class="navbar-ul-li"><a href="#">Articles</a></li>
                     <li class="navbar-ul-li"><a href="#">Contact</a></li>
+                    <li class="navbar-ul-li"><a href="#">À propos</a></li>
                 </ul>
             </nav>
             <div class="hide">
@@ -73,8 +75,48 @@ function getContentHome()
 function getFooter()
 {
     ?>
-    </body>
-</html>
+    <footer class="footer">
+        <div class="footer-left">
+            <a href="./index.php"><img class="footer-left-logo" src="img/logo.png"/></a>
+            <p>
+                Tous droits réservés Une Année De Voyages 2018
+            </p>
+        </div>
+        <div class="footer-right">
+            <div class="footer-right-col">
+                <p class="footer-right-col-title">annonceurs</p>
+                <ul>
+                    <li><a href="#">Offices de Tourisme</a></li>
+                    <li><a href="#">Voyagistes</a></li>
+                    <li><a href="#">Compagnies aériennes</a></li>
+                    <li><a href="#">Transports</a></li>
+                    <li><a href="#">Luxe, style et voyage</a></li>
+                    <li><a href="#">Hôtellerie, restauration, hébergement</a></li>
+                    <li><a href="#">Croisières, spa, thalasso</a></li>
+                    <li><a href="#">Facilitateurs de voyage</a></li>
+                </ul>
+            </div>
+            <div class="footer-right-col">
+                <p class="footer-right-col-title">compagnies</p>
+                <ul>
+                    <li><a href="#">Actualités</a></li>
+                    <li><a href="#">Star Alliance</a></li>
+                    <li><a href="#">SkyTeam</a></li>
+                    <li><a href="#">OneWorld</a></li>
+                </ul>
+            </div>
+            <div class="footer-right-col">
+                <p class="footer-right-col-title">a propos</p>
+                <ul>
+                    <li><a href="#">Concept</a></li>
+                    <li><a href="#">Notre équipe</a></li>
+                    <li><a href="#">Abonnement</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
     <script type="text/javascript">
         var menuImg = document.querySelector('.navbar-toggle-burger');
         var modal = document.querySelector('.modal');
@@ -108,5 +150,7 @@ function getFooter()
 
         });
     </script>
+    </body>
+    </html>
 <?php
 }
