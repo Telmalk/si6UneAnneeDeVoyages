@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Reading Page</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="top-background">
+      <img class="logo" src="img/logo.png" />
+      <nav class="navbar">
+        <div class="navbar-toggle">
+          <img class="navbar-toggle-burger" src="img/menu.svg" />
+        </div>
+        <ul class="navbar-ul">
+          <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
+          <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
+          <li class="navbar-ul-li"><a href="#">À propos</a></li>
+          <li class="navbar-ul-li"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hide">
+        <div class="modal">
+          <div class="modal-overlay"></div>
+          <ul class="modal-content">
+            <li class="modal-content-li"><a href="#">Abonnement</a></li>
+            <li class="modal-content-li"><a href="#">Fiches pratiques</a></li>
+            <li class="modal-content-li"><a href="#">À propos</a></li>
+            <li class="modal-content-li"><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="reading-buttonSection">
+    <div class="reading-buttonBox">
+      <a class="reading-button btn-active" href="#">BIEN-ÊTRE</a>
+      <a class="reading-button" href="#">GASTRONOMIE</a>
+      <a class="reading-button" href="#">HÉBERGEMENT</a>
+      <a class="reading-button" href="#">CULTURE</a>
+      <a class="reading-button" href="#">SPORT</a>
+      <div class="reading-border"></div>
+    </div>
+  </section>
+
+  <section class="reading-section">
+    <div class="reading-box">
+      <iframe class="reading-player" src="http://online.fliphtml5.com/dszd/fjwm/"  seamless="seamless" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" ></iframe>
+    </div>
+  </section>
+
+</body>
+
+<script type="text/javascript">
+  var menuImg = document.querySelector('.navbar-toggle-burger');
+  var modal = document.querySelector('.modal');
+  var modalOverlay = document.querySelector('.modal-overlay');
+  menuImg.addEventListener('click', function() {
+    console.log("toto");
+    modal.classList.add('activeModal');
+    modalOverlay.style.display = "block";
+  });
+  modalOverlay.addEventListener('click', function() {
+    modal.classList.remove('activeModal');
+    modalOverlay.style.display = "none";
+  });
+</script>
+
+</html>
