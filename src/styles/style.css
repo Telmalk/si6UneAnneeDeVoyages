@@ -738,8 +738,6 @@ body {
   }
 }
 
-/* TWITTER ACTU */
-
 @media (min-width: 1100px) {
   .twitterActu-section {
     /* margin-top: 100px; */
@@ -856,8 +854,6 @@ body {
   }
 }
 
-/* LAST ARTICLES */
-
 @media (min-width: 1100px) {
   .lastArticles-section {
     margin-top: 60px;
@@ -878,6 +874,7 @@ body {
     margin-top: -10px;
   }
   .lastArticles-img {
+    height: 240px;
     width: 360px;
     margin-bottom: 10px;
     margin-left: 10px;
@@ -928,6 +925,7 @@ body {
     z-index: 10;
   }
   .lastArticles-img {
+    height: 240px;
     width: 360px;
     margin: 10px;
   }
@@ -952,8 +950,6 @@ body {
     text-decoration: none;
   }
 }
-
-/* // TOPS // */
 
 @media (max-width: 1099px) {
   .top-imgContainer {
@@ -1163,8 +1159,6 @@ body {
   text-transform: uppercase;
 }
 
-/* READING */
-
 @media (max-width: 1099px) {
   .reading-button {
     width: 130px;
@@ -1253,4 +1247,126 @@ body {
   font-size: 24px;
 }
 
-/* FUSION YASIN  */
+.article-ariane {
+  margin-top: 40px;
+  margin-left: 116px;
+}
+
+.article-list {
+  display: flex;
+}
+
+.article-listItem {
+  margin-right: 40px;
+}
+
+.article-listItemLink {
+  text-decoration: none;
+  color: #9B9B9B;
+  font-size: 18px;
+  font-family: "Tw Cen MT Condensed";
+}
+
+.article-listItemLinkcurrent {
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
+  text-decoration: none;
+  color: #9B9B9B;
+  font-size: 18px;
+}
+
+.article-box {
+  position: relative;
+  margin: 200px 21.80vw 0 21.80vw;
+}
+
+.article-title {
+  color: #4A4A4A;
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.article-date {
+  color: #15DAB6;
+  font-size: 28px;
+  font-family: "Tw Cen MT Condensed", sans-serif;
+  margin-bottom: 60px;
+}
+
+.article-txt {
+  color: #979797;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  line-height: 34px;
+  margin-top: 20px;
+}
+
+.article-button {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-buttonItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: #9B9B9B;
+  /* padding: 11px 16px 11px 16px; */
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-size: 20px;
+  border: none;
+}
+
+@media (max-width: 1099px) {
+  .article-date {
+    color: #15DAB6;
+    font-size: 28px;
+    font-family: "Tw Cen MT Condensed", sans-serif;
+    margin-bottom: 30px;
+  }
+  .article-fichepratique {
+    width: 53px;
+    height: 82px;
+    margin-right: 10px;
+  }
+  .article-twitter {
+    margin-right: 10px;
+  }
+  .article-facebook {
+    margin-right: 10px;
+  }
+  .article-instagram {
+    margin-right: 10px;
+  }
+  .article-youtube {}
+}
+
+@media (min-width: 1100px) {
+  .article-fichepratique {
+    position: absolute;
+    width: 53px;
+    height: 82px;
+    left: -144px;
+    top: 0px;
+  }
+  .article-twitter {
+    position: absolute;
+    left: -134px;
+    top: 170px;
+  }
+  .article-facebook {
+    position: absolute;
+    left: -127px;
+    top: 235px;
+  }
+  .article-instagram {
+    position: absolute;
+    left: -134px;
+    top: 300px;
+  }
+  .article-youtube {
+    position: absolute;
+    left: -132px;
+    top: 365px;
+  }
+}

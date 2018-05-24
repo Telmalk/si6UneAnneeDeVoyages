@@ -1,0 +1,49 @@
+@media (min-width: 1100px) {
+  .green-section {
+    background-color: #15DAB6;
+    height: 240px;
+    margin-top: -100px;
+  }
+  .green-box {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 75px;
+    font-family: 'Playfair Display Regular';
+    font-weight: bold;
+    font-style: italic;
+    font-size: 26px;
+    color: #fff;
+    margin-left: 6vw;
+    margin-right: 6vw;
+  }
+  .green-number {
+    font-family: 'Tw Cen MT Condensed';
+    font-size: 90px;
+    color: #FFFFFF;
+    opacity: 0.41;
+  }
+  .green-txt1 {
+    width: 200px;
+    margin-left: -5.5vw;
+    margin-top: 50px;
+    line-height: 30px;
+  }
+  .green-txt2 {
+    margin-top: 68px;
+    margin-left: -7vw;
+  }
+  .green-txt3 {
+    margin-top: 68px;
+    margin-left: -10vw;
+  }
+  .green-txt4 {
+    margin-top: 68px;
+    margin-left: -12vw;
+  }
+}
+
+@media (max-width: 1099px) {
+  .green-section {
+    display: none;
+  }
+}
