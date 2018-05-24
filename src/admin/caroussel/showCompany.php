@@ -27,7 +27,7 @@ $stmt->execute();
 $nbFind = 0;
 ?>
 <div class="container">
-    <a href="./add.php"><button class="btn btn-primary">Ajouter un etablissement</button></a>
+    <a href="./add.php"><button class="btn btn-primary">Ajouter une fiche technique</button></a>
     <a href="../index.php"><button class="btn btn-default">Retour a la home</button></a>
     <table class="table">
         <thead>

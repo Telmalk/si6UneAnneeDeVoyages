@@ -29,8 +29,8 @@ if ($row === false) {
 getHeader("../");
 ?>
 <div class="container">
-<a href="./showCompany.php">Retour a la list des etablissement</a>
-<p>Etes vous sur de vouloir suprimmer l'etablissement <?=$row['etablissement']?></p>
+<a style="margin-bottom: 20px;" class="btn btn-primary" href="./showCompany.php">Retour a la list des fiche technique</a>
+    <p><strong>Etes vous sur de vouloir suprimmer l'etablissement <?=$row['etablissement']?></strong></p>
 <a href="dodelete.php?id=<?=$row['id_carrousel']?>"><button class="btn btn-success">Oui</button></a>
 <a href="./showCompany.php"><button class="btn btn-danger">Non</button></a>
 </div>

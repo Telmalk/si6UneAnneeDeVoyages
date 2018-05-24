@@ -20,13 +20,18 @@ SET
 `id_user` = :id_user;
 ";
 
+if (saveFile("../../img/articles","img") !== 0) {
+    header("location: ./showArticle.php?error=nopictoadd");
+    exit;
+}
+
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":title", $_POST['title']);
-$stmt->bindValue(":img", $_POST['img']);
+$stmt->bindValue(":img", $_FILES['img']['name']);
 $stmt->bindValue(":content", $_POST['content']);
 $stmt->bindValue(":today", $_POST['today']);
 $stmt->bindValue(":id_user", intval($_SESSION['user']['id']));
 $stmt->execute();
 
-header("location: ../index.php");
+header("location: ./showArticle.php");
 exit;

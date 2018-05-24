@@ -11,6 +11,6 @@ require_once "../function/function.php";
 checkUser("../signin.php");
 
 
-getHeader();
+getHeader("../");
 formUpdate($pdo);
 getFooter();

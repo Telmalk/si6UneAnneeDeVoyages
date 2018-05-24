@@ -24,9 +24,15 @@ WHERE
 
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(":dname", $_POST["name"]);
-$stmt->bindValue(":logo", $_POST["logo"]);
 $stmt->bindValue(":category", $_POST["category"]);
 $stmt->bindValue(":id", $_GET["id"]);
+if (!empty($_FILES['logo']['name']) && $_FILES['logo']['name'] !== $_GET['img']) {
+    unlink("../../img/articles/" . $_GET['img']);
+    saveFile("../../img/articles/", "logo");
+    $stmt->bindValue(":logo",htmlentities($_FILES["logo"]['name']));
+} else {
+    $stmt->bindValue(":logo", htmlentities("partenaire/" . $_GET['img']));
+}
 $stmt->execute();
 
 header("location: showPartner.php");

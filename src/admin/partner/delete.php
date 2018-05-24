@@ -10,6 +10,6 @@ require_once "../../include/connection.php";
 require_once "../function/function.php";
 checkUser("../signin.php");
 
-getHeader();
+getHeader("../");
 confrimDeletePartner($pdo);
 getFooter();
