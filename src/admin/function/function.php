@@ -89,13 +89,16 @@ function formAddArticle()
     date_default_timezone_set('UTC');
     $today = date('d.m.y');
     ?>
-    <form method="post" action="doadd.php">
+    <div class="container">
+        <a style="margin-bottom: 20px;" class="btn btn-primary">Retour a la liste des articles</a>
+    <form method="post" action="doadd.php" enctype="multipart/form-data">
         <label>Le titre de l'article<input type="text" name="title"></label> <br/>
-        <label>Lien de l'image<input type="text" name="img"></label><br/>
-        <label>Contenu<input type="text" name="content"></label><br/>
+        <label>Lien de l'image<input type="file" name="img"></label><br/>
+        <label>Contenu<textarea name="content"></textarea></label><br/>
         <input type="hidden" value="<?=$today?>" name="today">
-        <button type="submit">Valider</button>
+        <button class="btn btn-success" type="submit">Valider</button>
     </form>
+    </div>
     <?php
 }
 
@@ -173,15 +176,17 @@ function confirmDelete(PDO $pdo)
     $stmt->execute();
     $row = $stmt->fetch(PDO::FETCH_ASSOC);
     if ($row === false) {
-        header("location?error=deleteeroor");
+        header("location: ./showArticle.php?error=deleteeroor");
         exit;
     }
     ?>
-    <a href="../index.php">Retour a la home</a>
+    <div class="container">
+    <a class="btn btn-primary" href="../index.php">Retour a la home</a>
     <form method="post" action="./dodelete.php?id=<?=$_GET['id']?>">
         <p>Etes vous sur de vouloir suprimmer l'article <?=$row['title']?></p>
-        <button type="submit">Oui</button>
+        <button class="btn-success" type="submit">Oui</button>
     </form>
+    </div>
     <?php
 }
 
@@ -196,7 +201,7 @@ function doDelete(PDO $pdo)
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":id_article", $_GET['id']);
     $stmt->execute();
-    header("location: ../index.php");
+    header("location: ./showArticle.php");
     exit;
 }
 
@@ -221,13 +226,15 @@ function formUpdate(PDO $pdo)
         exit;
     }
     ?>
-    <a href="../index.php">Retour a la home</a>
-    <form method="post" action="doupdate.php?id=<?=$_GET['id']?>">
-        <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label>
-        <label>Modifier le titre <input type="text" name="img" value="<?=$row["img"]?>"></label>
-        <label>Modifier le titre <input type="text" name="content" value="<?=$row["content"]?>"></label>
-        <button type="submit">Valider</button>
+    <div class="container">
+    <a style="margin-bottom: 20px;" class="btn btn-primary" href="../index.php">Retour a la home</a>
+    <form method="post" action="doupdate.php?id=<?=$_GET['id']?>&amp;img=<?=$row['img']?>" enctype="multipart/form-data">
+        <label>Modifier le titre <input type="text" name="title" value="<?=$row["title"]?>"></label> <br/>
+        <label>Modifier l'image <input type="file" name="img"></label> <br/>
+        <label>Modifier le contenu <textarea name="content"><?=$row["content"]?></textarea></label> <br/>
+        <button class="btn btn-success" type="submit">Valider</button>
     </form>
+    </div>
     <?php
 }
 
@@ -248,7 +255,7 @@ function doUpdate(PDO $pdo)
     $stmt->bindValue(":content" , $_POST['content']);
     $stmt->bindValue(":id_article", $_GET["id"]);
     $stmt->execute();
-    header("location: ../index.php");
+    header("location: ./showArticle.php");
     exit;
 }
 
@@ -308,10 +315,11 @@ function showListPartner(PDO $pdo)
 function formPartner()
 {
     ?>
-    <a href="./showPartner.php">Retour a la liste des partenaire</a>
-    <form method="post" action="doadd.php">
-        <label>Nom du partenaire : <input type="text" name="name"></label>
-        <label>Logo du partenaire : <input type="text" name="logo"></label>
+    <div class="container">
+    <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showPartner.php">Retour a la liste des partenaire</a>
+    <form method="post" action="doadd.php" enctype="multipart/form-data">
+        <label>Nom du partenaire : <input type="text" name="name"></label> <br />
+        <label>Logo du partenaire : <input type="file" name="logo"></label> <br />
         <label>Type de partenaire:
             <select name="category">
                 <option value="spa">spa</option>
@@ -319,9 +327,10 @@ function formPartner()
                 <option value="Compagnie aerienne">Compagnie aerienne</option>
                 <option value="Restaurant">Restaurant</option>
             </select>
-        </label>
+        </label> <br/>
         <button type="submit">Valider</button>
     </form>
+    </div>
     <?php
 }
 
@@ -334,10 +343,16 @@ function addPartner(PDO $pdo)
       `logo` = :logo,
       `categorie` = :categorie;
     ";
+
+
+    if (saveFile("../../img/partenaire/", "logo") != 0) {
+        header("location: ./showPartner.php?error=noimgtomove");
+        exit;
+    }
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":dname", $_POST['name']);
-    $stmt->bindValue(':logo', $_POST['logo']);
-    $stmt->bindValue(':categorie', $_POST['category']);
+    $stmt->bindValue(':logo', "partenaire/" . $_FILES['logo']['name']);
+    $stmt->bindValue(':categorie',  $_POST['category']);
     $stmt->execute();
     header("location: ./showPartner.php");
 }
@@ -366,11 +381,12 @@ function confrimDeletePartner(PDO $pdo)
             unset($_SESSION["error"]["delete"]);
         }
         ?>
-        <a href="./showPartner.php">Retour a la liste des partenaire</a>
+        <div class="container">
+        <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showPartner.php">Retour a la liste des partenaire</a>
         <p>Etes vous sur de vouloir suprimmer le partenaire <?=$row['name']?></p>
-        <form method="post" action="dodelete.php?id=<?=$row['id_partner']?>">
-            <button type="submit">Oui</button>
-        </form>
+            <a class="btn btn-success" href="./dodelete.php?id=<?=$row['id_partner']?>">Oui</a>
+            <button class="btn btn-danger">Non</button>
+        </div>
     <?php
 
     }
@@ -379,6 +395,25 @@ function confrimDeletePartner(PDO $pdo)
 
 function doDeletePartner(PDO $pdo)
 {
+    $sql = "
+        SELECT
+          `logo`
+        FROM
+          `partner`
+        WHERE
+        `id_partner` = :id;
+    ";
+
+    $stmt = $pdo->prepare($sql);
+    $stmt->bindValue(":id", $_GET['id']);
+    $stmt->execute();
+    $row = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($row === false) {
+        header('location: ./showPartner?=error=nodatatodelete');
+        exit;
+    }
+
+    unlink("../../img/".$row['logo']);
     $sql = "
         DELETE FROM `partner`
         WHERE
@@ -433,10 +468,11 @@ function formUpdatePartner(PDO $pdo)
     }
     $optionArray = whoSelected($row["categorie"], $categoryArray);
     ?>
-    <a href="./showPartner.php">Retour a la liste des partenaire</a>
-    <form method="post" action="doupdate.php?id=<?=$row['id_partner']?>">
-        <label>Entreprise partenaire: <input type="text" name="name" value="<?=$row['name']?>"></label>
-        <label>Logo partneaire url: <input type="text" name="logo" value="<?=$row['logo']?>"></label>
+    <div class="container">
+    <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showPartner.php">Retour a la liste des partenaire</a>
+    <form method="post" action="doupdate.php?id=<?=$row['id_partner']?>&amp;img=<?=$row["logo"]?>" enctype="multipart/form-data">
+        <label>Entreprise partenaire: <input type="text" name="name" value="<?=$row['name']?>"></label> <br/>
+        <label>Logo partneaire url: <input type="file" name="logo"></label><br/>
         <label>
             <select name="category">
             <?php
@@ -447,15 +483,25 @@ function formUpdatePartner(PDO $pdo)
                 }
             ?>
             </select>
-        </label>
-        <button type="submit">Valider</button>
+        </label><br/>
+        <button class="btn btn-success" type="submit">Valider</button>
     </form>
+    </div>
     <?php
 }
 
-function saveFile() {
-    $move = move_uploaded_file($_FILES['img']['tmp_name'], "../../img/".$_FILES["img"]['name']);
-    if ($move === false) {
+function saveFile($way, $imgName) {
+    $move = move_uploaded_file($_FILES[$imgName]['tmp_name'], $way . $_FILES[$imgName]['name']);
+    if   ($move === false) {
+        return -1;
+    }
+    return 0;
+}
+
+function deleteFile(array $name, $way, $nameToDekete)
+{
+    $fileDelete = unlink($way.$name[$nameToDekete]);
+    if ($fileDelete === false) {
         return -1;
     }
     return 0;

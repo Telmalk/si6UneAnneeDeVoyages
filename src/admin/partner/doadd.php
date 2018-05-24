@@ -11,6 +11,5 @@ require_once "../../include/connection.php";
 require_once "../function/function.php";
 checkUser("../signin.php");
 
-var_dump($_POST);
 addPartner($pdo);
 exit;
