@@ -33,7 +33,7 @@ $sql = "
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
-$nbFind = 0;
+$nbFind = 1;
 getHeader();
 ?>
 
@@ -50,8 +50,8 @@ getHeader();
     <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)) :
           if ($row['category'] === $_GET['page']) : ?>
     <div class="top-item">
-        <!-- <div class="top-nb"><p>1</p></div> -->
         <div class="top-imgContainer">
+            <div class="top-nb"><p><?=$nbFind?></p></div>
             <a href="#"><img class="top-itemImg" src="img/fiche_technique/<?=$row['img']?>" alt="Photo de la fiche technique"></a>
         </div>
         <div class="top-itemInfo">
@@ -64,18 +64,19 @@ getHeader();
           $nbFind++;
         endif;
         endwhile;
-        if ($nbFind < 100) :
-            while ($nbFind < 100) : ?>
+        if ($nbFind <= 110) :
+            while ($nbFind <= 110) : ?>
     <div class="top-item <?php if ($nbFind > 10) {
         echo "hidden";
     }?>">
         <div class="top-imgContainer">
+            <div class="top-nb"><p><?=$nbFind?></p></div>
             <a href="#"><img class="top-itemImg" src="img/lama.jpg" alt="Bah c'est un Lama"></a>
         </div>
         <div class="top-itemInfo">
             <div><a class="top-itemTitle" href="#">Type something</a></div>
             <div class="top-itemTxt"><a class="top-itemTxtLink" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></div>
-            <div><a class="top-itemSeemore" href="#">VOIR PLUS</a></div>
+            <a class="top-itemSeemore" href="#">VOIR PLUS</a>
         </div>
     </div>
     <?php
