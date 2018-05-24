@@ -52,7 +52,7 @@ if ($row === false) {
     <label> Type de l'activité
         <select name="category">
             <?php
-                $category = ["Bien être", "Gastronomie", "Sport", "Hebergement", "Culture"];
+                $category = ["Bien-être", "Gastronomie", "Sport", "Hebergement", "Culture"];
                 $selected = whoSelected($row['category'], $category);
                 $index = 0;
                 while ($index < sizeof($selected)) {

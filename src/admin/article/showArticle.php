@@ -18,6 +18,7 @@ $sql = "
   `img`,
   `content`,
   `spawnDate`,
+  `category`,
   `id_user`
   FROM
   `articles`;
@@ -33,11 +34,12 @@ $sql = "
     <table class="table">
         <thead>
             <tr>
-            <th scope="col">id</th>
-            <th scope="col">Article</th>
-            <th scope="col">Date</th>
-            <th scope="col">Modifier</th>
-            <th scope="col">Suprimmer</th>
+                <th scope="col">id</th>
+                <th scope="col">Article</th>
+                <th scope="col">Date</th>
+                <th scope="col">Category</th>
+                <th scope="col">Modifier</th>
+                <th scope="col">Suprimmer</th>
             </tr>
         </thead>
         <tbody>
@@ -46,6 +48,7 @@ $sql = "
                     <th><?=$row['id_article']?></th>
                     <td><?=$row["title"]?></td>
                     <td><?=$row['spawnDate']?></td>
+                    <td><?=$row['category']?></td>
                     <td><a href="./update.php?id=<?=$row["id_article"]?>">Modifier</a></td>
                     <td><a href="./delete.php?id=<?=$row['id_article']?>">Suprimmer</a></td>
                 </tr>

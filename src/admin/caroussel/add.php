@@ -22,7 +22,7 @@ getHeader("../");
         <label>Url du Site<input type="text" name="url_site"></label><br/>
         <label> Type de l'activité
             <select name="category">
-                <option>Bien être</option>
+                <option>Bien-être</option>
                 <option>Gastronomie</option>
                 <option>Sport</option>
                 <option>Hebergement</option>
