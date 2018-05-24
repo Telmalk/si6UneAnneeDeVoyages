@@ -1,0 +1,27 @@
+.partenaire {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  @include for-size(tablet-landscape-up){
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+  }
+  &-div {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 5% 0;
+    @include for-size(tablet-portrait-up){
+      width: 50%;
+      display: flex;
+      justify-content: center;
+    }
+    @include for-size(tablet-landscape-up){
+      width: auto;
+    }
+  }
+}
