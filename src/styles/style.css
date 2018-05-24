@@ -668,11 +668,11 @@ body {
 
 /* // TOPS // */
 @media (max-width: 1099px) {
-  /* .top-nb {
+  .top-nb {
     border-radius: 30px;
     box-shadow: 0 0 10px 2px #000;
-    margin-left: 22vw;
-    margin-bottom: -2vw;
+    left: 26vw;
+    top: 290px;
     z-index: 47;
     border: 1px solid #000;
     width: 50px;
@@ -682,7 +682,9 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     position: absolute;
-  } */
+    background-color: #fff;
+  }
+
   .top-button {
     width: 130px;
     margin-left: auto;
@@ -740,6 +742,24 @@ body {
 }
 
 @media (min-width: 1100px) {
+  .top-nb {
+    border-radius: 30px;
+    box-shadow: 0 0 10px 2px #000;
+    left: 125px;
+    top: 205px;
+    z-index: 47;
+    border: 1px solid #000;
+    width: 50px;
+    font-family: "Tw Cen MT Condensed Extra Bold";
+    text-align: center;
+    font-size: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: absolute;
+    background-color: #fff;
+  }
+
+
   .top-button {
     margin-left: 30px;
     margin-right: 30px;
@@ -766,6 +786,7 @@ body {
     height: 264px;
     background-color: grey;
     margin-right: 50px;
+    position: relative;
   }
 
   .top-itemTxt {
@@ -833,7 +854,13 @@ body {
   color: deepskyblue;
 }
 
-.top-seeMoreLink {
+.top-seeMore {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-seeMoreBtn {
+  cursor: pointer;
   text-decoration: none;
   color: #ffffff;
   background: #15DAB6;
