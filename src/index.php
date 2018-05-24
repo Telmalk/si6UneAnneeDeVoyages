@@ -180,82 +180,63 @@
                 <?php
                     endwhile;
                 ?>
-
-        <!-- <div class="article2">
-            <a class="lastArticles-articlelink" href="">
-                <img src="img/article2.png" alt="" class="lastArticles-img">
-                <br><p class="lastArticles-articleTitle">Le blue Lagoon islandais, un spa à ciel ouvert</p>
-            </a>
-            <p class="lastArticles-categories">gastronomie</p>
-        </div>
-
-        <div class="article3">
-            <a class="lastArticles-articlelink" href="">
-                <img src="img/article3.png" alt="" class="lastArticles-img">
-                <br><p class="lastArticles-articleTitle">Le blue Lagoon islandais, un spa à ciel ouvert</p>
-            </a>
-            <p class="lastArticles-categories">hébergement</p>
-        </div>
-        -->
-    </div>
 </section>
-
-<section class="footer">
-    <div class="footer-contact">
-        <h3 class="footer-contact-title">Contact</h3>
-        <div class="footer-contact-box">
+<section class="bot">
+    <div class="bot-contact">
+        <h3 class="bot-contact-title">Contact</h3>
+        <div class="bot-contact-box">
             <div class="centerImgFooter">
-                <img class="footer-contact-box-img" src="img/map.svg" />
+                <img class="bot-contact-box-img" src="img/map.svg" />
             </div>
-            <p class="footer-contact-box-p"> 32, rue des Peupliers </br> 92100 Boulogne
+            <p class="bot-contact-box-p"> 32, rue des Peupliers </br> 92100 Boulogne
 
             </p>
         </div>
-        <div class="footer-contact-box">
+        <div class="bot-contact-box">
             <div class="centerImgFooter">
-                <img class="footer-contact-box-img" src="img/tel.svg" />
+                <img class="bot-contact-box-img" src="img/tel.svg" />
             </div>
-            <p class="footer-contact-box-p">+33(0) 413 10 513</p>
+            <p class="bot-contact-box-p">+33(0) 413 10 513</p>
         </div>
-        <div class="footer-contact-box">
+        <div class="bot-contact-box">
             <div class="centerImgFooter">
-                <img class="footer-contact-box-img" src="img/mail.svg" />
+                <img class="bot-contact-box-img" src="img/mail.svg" />
             </div>
-            <p class="footer-contact-box-p">rédaction@uneanneedevoyages.com</p>
+            <p class="bot-contact-box-p">rédaction@uneanneedevoyages.com</p>
         </div>
-        <div class="footer-contact-horaire">
+        <div class="bot-contact-horaire">
             <p>
                 Ouvert du lundi au vendredi</br>de 10h à 18h
             </p>
         </div>
-        <div class="footer-contact-social">
-            <a href="#" class="footer-contact-social-link"><img class="footer-contact-social-link-icon" src="img/twitter.svg"/></a>
-            <a href="#" class="footer-contact-social-link"><img class="footer-contact-social-link-icon" src="img/facebook.svg"/></a>
-            <a href="#" class="footer-contact-social-link"><img class="footer-contact-social-link-icon" src="img/instagram.svg"/></a>
-            <a href="#" class="footer-contact-social-link"><img class="footer-contact-social-link-icon" src="img/youtube.svg"/></a>
+        <div class="bot-contact-social">
+            <a href="#" class="bot-contact-social-link"><img class="bot-contact-social-link-icon" src="img/twitter.svg"/></a>
+            <a href="#" class="bot-contact-social-link"><img class="bot-contact-social-link-icon" src="img/facebook.svg"/></a>
+            <a href="#" class="bot-contact-social-link"><img class="bot-contact-social-link-icon" src="img/instagram.svg"/></a>
+            <a href="#" class="bot-contact-social-link"><img class="bot-contact-social-link-icon" src="img/youtube.svg"/></a>
         </div>
     </div>
-    <div class="footer-msg">
-        <h3 class="footer-msg-title">Envoyez nous un message</h3>
+    <div class="bot-msg">
+        <h3 class="bot-msg-title">Envoyez nous un message</h3>
         <form>
 
-            <div class="footer-msg-type">
-                <p class="footer-msg-type-title">Vous êtes</p>
+            <div class="bot-msg-type">
+                <p class="bot-msg-type-title">Vous êtes</p>
                 <div class="flexdir">
-                    <div class="footer-msg-type-row">
+                    <div class="bot-msg-type-row">
                         <p>
                             <input name="youare" value="Journaliste" type="radio" /><label>Journaliste</label>
                             <input name="youare" value="Annonceur" type="radio" /><label>Annonceur</label>
                             <input name="youare" value="Lecteur" type="radio" /><label>Lecteur</label>
                     </div>
-                    <div class="footer-msg-type-row">
+                    <div class="bot-msg-type-row">
                         <input name="youare" value="Partenaire" type="radio" /><label>Partenaire</label>
                         <input name="youare" value="Office de tourisme" type="radio" /><label>Office de tourisme</label>
                     </div>
                 </div>
             </div>
-            <div class="footer-msg-fields">
-                <div class="footer-msg-fields-info">
+            <div class="bot-msg-fields">
+                <div class="bot-msg-fields-info">
                     <div class="flexdir">
                         <label>société</label>
                         <input type="text" />
@@ -263,7 +244,7 @@
                         <input type="email" />
                     </div>
                 </div>
-                <div class="footer-msg-fields-info">
+                <div class="bot-msg-fields-info">
                     <div class="flexdir">
                         <label> nom</label>
                         <input type="text" />
@@ -271,7 +252,7 @@
                         <input type="tel" />
                     </div>
                 </div>
-                <div class="footer-msg-fields-textarea flexdir">
+                <div class="bot-msg-fields-textarea flexdir">
                     <label>message</label>
                     <textarea></textarea>
                 </div>
@@ -280,5 +261,63 @@
         </form>
     </div>
 </section>
+<section class="partenaire">
+    <div class="partenaire-div">
+        <img src="img/staralliance.png"/>
+    </div>
+    <div class="partenaire-div">
+        <img src="img/oneworld.png"/>
+    </div>
+    <div class="partenaire-div">
+        <img src="img/fujifilm.png"/>
+    </div>
+    <div class="partenaire-div">
+        <img src="img/skyteam.png"/>
+    </div>
+    <div class="partenaire-div">
+        <img src="img/paris.png"/>
+    </div>
+</section>
+<footer class="footer">
+    <div class="footer-left">
+        <img class="footer-left-logo" src="img/logo.png"/>
+        <p>
+            Tous droits réservés Une Année De Voyages 2018
+        </p>
+    </div>
+    <div class="footer-right">
+        <div class="footer-right-col">
+            <p class="footer-right-col-title">annonceurs</p>
+            <ul>
+                <li><a href="#">Offices de Tourisme</a></li>
+                <li><a href="#">Voyagistes</a></li>
+                <li><a href="#">Compagnies aériennes</a></li>
+                <li><a href="#">Transports</a></li>
+                <li><a href="#">Luxe, style et voyage</a></li>
+                <li><a href="#">Hôtellerie, restauration, hébergement</a></li>
+                <li><a href="#">Croisières, spa, thalasso</a></li>
+                <li><a href="#">Facilitateurs de voyage</a></li>
+            </ul>
+        </div>
+        <div class="footer-right-col">
+            <p class="footer-right-col-title">compagnies</p>
+            <ul>
+                <li><a href="#">Actualités</a></li>
+                <li><a href="#">Star Alliance</a></li>
+                <li><a href="#">SkyTeam</a></li>
+                <li><a href="#">OneWorld</a></li>
+            </ul>
+        </div>
+        <div class="footer-right-col">
+            <p class="footer-right-col-title">a propos</p>
+            <ul>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Notre équipe</a></li>
+                <li><a href="#">Abonnement</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
 <?php
     getFooter();

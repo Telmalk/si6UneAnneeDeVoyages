@@ -366,7 +366,7 @@ function addPartner(PDO $pdo)
     }
     $stmt = $pdo->prepare($sql);
     $stmt->bindValue(":dname", $_POST['name']);
-    $stmt->bindValue(':logo', "partenaire/" . $_FILES['logo']['name']);
+    $stmt->bindValue(':logo', $_FILES['logo']['name']);
     $stmt->bindValue(':categorie',  $_POST['category']);
     $stmt->execute();
     header("location: ./showPartner.php");
