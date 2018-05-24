@@ -286,6 +286,28 @@ table {
   transition: right 0.5s ease;
 }
 
+.hover:hover {
+  color: deepskyblue;
+}
+
+.resetW {
+  width: 7%;
+}
+
+.resetW2 {
+  width: 11%;
+}
+@media (min-width: 949px) {
+  .resetW2 {
+    width: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .resetW2 {
+    width: 8%;
+  }
+}
+
 .fourcards {
   display: flex;
   flex-direction: column;
@@ -369,11 +391,235 @@ table {
   justify-content: center;
 }
 
+.footer {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-contact {
+  width: 100%;
+  font-family: "Tw Cen MT Bold", sans-serif;
+  background-color: #15DAB6;
+  color: white;
+  margin-top: 5vh;
+  padding: 10%;
+}
+@media (min-width: 949px) {
+  .footer-contact {
+    width: 40%;
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 2%;
+  }
+}
+.footer-contact-title {
+  text-transform: uppercase;
+}
+@media (min-width: 949px) {
+  .footer-contact-title {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+}
+.footer-contact-box {
+  display: flex;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+.footer-contact-box-img {
+  width: 50px;
+}
+.footer-contact-box-p {
+  padding: 20px;
+}
+.footer-contact-horaire {
+  margin-left: 30%;
+  padding-left: 20px;
+}
+.footer-contact-social {
+  display: flex;
+  margin-left: 10%;
+  margin-top: 10vh;
+}
+.footer-contact-social-link {
+  width: 15%;
+}
+.footer-contact-social-link-icon {
+  width: 30px;
+}
+.footer-msg {
+  width: 100%;
+  padding: 0;
+  font-family: "Tw Cen MT Bold", sans-serif;
+  margin-bottom: 5vh;
+  color: #9B9B9B;
+}
+@media (min-width: 949px) {
+  .footer-msg {
+    width: 55%;
+    padding-left: 5%;
+  }
+}
+.footer-msg-title {
+  font-family: "Tw Cen MT Condensed Extra Bold", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-top: 2vh;
+  text-align: center;
+  color: #4A4A4A;
+}
+@media (min-width: 949px) {
+  .footer-msg-title {
+    margin-top: 5vh;
+    text-align: left;
+  }
+}
+.footer-msg-type {
+  display: flex;
+  margin-top: 10vh;
+  flex-wrap: wrap;
+  margin-left: 5%;
+}
+@media (min-width: 949px) {
+  .footer-msg-type {
+    margin-left: 0;
+  }
+}
+.footer-msg-type-title {
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 3vh;
+  letter-spacing: 3px;
+}
+@media (min-width: 949px) {
+  .footer-msg-type-title {
+    width: 20%;
+  }
+}
+.footer-msg-type-row {
+  width: 100%;
+  height: 5vh;
+}
+.footer-msg-type-row input {
+  margin-left: 20px;
+}
+.footer-msg-type-row :checked {
+  border: 3px solid black;
+}
+.footer-msg-type-row label {
+  padding-left: 10px;
+  color: #767676;
+}
+.footer-msg-fields {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 3vh;
+}
+.footer-msg-fields-info {
+  width: 45%;
+  margin-left: 5%;
+}
+@media (min-width: 949px) {
+  .footer-msg-fields-info {
+    width: 50%;
+    margin-left: 0;
+  }
+}
+.footer-msg-fields-info label {
+  height: 3vh;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  letter-spacing: 3px;
+}
+.footer-msg-fields-info input {
+  width: 80%;
+  height: 3vh;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.footer-msg-fields-info :focus {
+  color: #15DAB6;
+  outline: none;
+}
+.footer-msg-fields-textarea {
+  width: 95%;
+  margin-left: 5%;
+}
+@media (min-width: 949px) {
+  .footer-msg-fields-textarea {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.footer-msg-fields-textarea label {
+  margin-top: 5vh;
+  height: 3vh;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.footer-msg-fields-textarea textarea {
+  width: 72%;
+  margin-top: 3vh;
+  height: 15vh;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1.2rem;
+}
+.footer-msg-fields-textarea :focus {
+  color: #15DAB6;
+  outline: none;
+}
+
+.centerImgFooter {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.flexdir {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 949px) {
+  .flexdir {
+    width: 80%;
+  }
+}
+
+input {
+  font-family: "Tw Cen MT Bold", sans-serif;
+  font-size: 1.2rem;
+}
+
+.send {
+  position: absolute;
+  bottom: 3vh;
+  right: 0;
+}
+@media (min-width: 600px) {
+  .send {
+    right: 5%;
+  }
+}
+.send img {
+  width: 70px;
+}
+
 @font-face {
   font-family: "Tw Cen MT Condensed Extra Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Tw Cen MT Condensed Extra Bold"), url("../fonts/TCCEB.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Tw Cen MT Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Tw Cen MT Bold"), url("../fonts/TCB_____.woff") format("woff");
 }
 
 @font-face {
@@ -668,11 +914,14 @@ body {
 
 /* // TOPS // */
 @media (max-width: 1099px) {
+  .top-imgContainer {
+    position: relative;
+  }
   .top-nb {
-    border-radius: 30px;
+    /* border-radius: 30px;
     box-shadow: 0 0 10px 2px #000;
-    left: 26vw;
-    top: 290px;
+    left: 180px;
+    top: -25px;
     z-index: 47;
     border: 1px solid #000;
     width: 50px;
@@ -682,7 +931,8 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     position: absolute;
-    background-color: #fff;
+    background-color: #fff; */
+    display: none;
   }
 
   .top-button {
@@ -961,3 +1211,7 @@ body {
   font-family: "Tw Cen MT Condensed";
   font-size: 24px;
 }
+
+
+
+/* FUSION YASIN  */
