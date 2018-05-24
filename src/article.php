@@ -14,7 +14,7 @@ SELECT
   `id_article`,
   `title`,
   `category`,
-  `img`
+  `img`,
 FROM 
 articles;
 ";
