@@ -17,7 +17,8 @@ SET
 `img` = :img,
 `content` = :content,
 `spawnDate` = :today,
-`id_user` = :id_user;
+`id_user` = :id_user,
+`category` = :category;
 ";
 
 if (saveFile("../../img/articles/","img") !== 0) {
@@ -30,6 +31,7 @@ $stmt->bindValue(":title", $_POST['title']);
 $stmt->bindValue(":img", $_FILES['img']['name']);
 $stmt->bindValue(":content", $_POST['content']);
 $stmt->bindValue(":today", $_POST['today']);
+$stmt->bindValue(":category", $_POST['category']);
 $stmt->bindValue(":id_user", intval($_SESSION['user']['id']));
 $stmt->execute();
 

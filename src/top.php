@@ -13,7 +13,7 @@ if (!isset($_GET['page']) || empty($_GET['page'])) {
     exit;
 }
 
-if ($_GET['page'] !== "Gastronomie" && $_GET['page'] !== "Hebergement" && $_GET['page'] !== "Bien etre") {
+if ($_GET['page'] !== "Gastronomie" && $_GET['page'] !== "Hebergement" && $_GET['page'] !== "Bien-être") {
     header("location: error.php?error=badcategory");
     exit;
 }
@@ -26,8 +26,9 @@ $sql = "
         `img`,
         `title`
     FROM
-      `carrousel`;
-    LIMIT 100
+      `carrousel`
+     ORDER BY id_carrousel 
+    DESC LIMIT 0, 3;
 ";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
@@ -38,7 +39,7 @@ getHeader();
 
 <section class="top-buttonSection">
     <div class="top-buttonBox">
-        <a class="top-button <?=whoSelect("Bien etre")?>" href="#">BIEN-ÊTRE</a>
+        <a class="top-button <?=whoSelect("Bien-être")?>" href="top.php?page=Bien-être">BIEN-ÊTRE</a>
         <a class="top-button <?=whoSelect("Gastronomie")?>" href="top.php?page=Gastronomie">GASTRONOMIE</a>
         <a class="top-button <?=whoSelect("Hebergement")?>" href="top.php?page=Hebergement">HÉBERGEMENT</a>
         <div class="top-border"></div>

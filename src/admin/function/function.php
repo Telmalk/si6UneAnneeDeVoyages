@@ -90,10 +90,19 @@ function formAddArticle()
     $today = date('d.m.y');
     ?>
     <div class="container">
-        <a style="margin-bottom: 20px;" class="btn btn-primary">Retour a la liste des articles</a>
+        <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showArticle.php">Retour a la liste des articles</a>
     <form method="post" action="doadd.php" enctype="multipart/form-data">
         <label>Le titre de l'article<input type="text" name="title"></label> <br/>
         <label>Lien de l'image<input type="file" name="img"></label><br/>
+        <label> Type de l'activité
+            <select name="category">
+                <option>Bien être</option>
+                <option>Gastronomie</option>
+                <option>Sport</option>
+                <option>Hebergement</option>
+                <option>Culture</option>
+            </select>
+        </label><br/>
         <label>Contenu<textarea name="content"></textarea></label><br/>
         <input type="hidden" value="<?=$today?>" name="today">
         <button class="btn btn-success" type="submit">Valider</button>

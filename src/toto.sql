@@ -78,3 +78,11 @@ INSERT INTO `carrousel`
     `adress` = 'adress',
     `phone_number` = 'phone',
     `category` = 'category';
+
+SELECT *
+FROM articles
+ORDER BY date DESC
+
+
+SELECT * FROM articles ORDER BY id_article DESC LIMIT 0, 1
+
