@@ -39,8 +39,9 @@ if ($row === false) {
     exit;
 }
 ?>
-
-<form class="container" method="post" action="doupdate.php?img=<?=$row['img']?>&amp;id=<?=$row['id_carrousel']?>"  enctype="multipart/form-data">
+<div class="container">
+    <a style="margin-bottom: 20px;" class="btn btn-primary" href="./showCompany.php">Listes des activités</a>
+<form method="post" action="doupdate.php?img=<?=$row['img']?>&amp;id=<?=$row['id_carrousel']?>"  enctype="multipart/form-data">
     <label>Titre du Post: <input type="text" name="title" value="<?=$row['title']?>"></label><br />
     <label>imge du post: <input type="file" name="img"></label> <br/>
     <label>Ville du post: <input type="text" name="citie" value="<?=$row['city']?>"></label> <br/>
@@ -64,3 +65,5 @@ if ($row === false) {
     </label><br/>
     <label>Description du post:  <textarea name="description"><?=$row['description']?></textarea></label><br/>
     <button class="btn btn-success" type="submit">Valider</button>
+</form>
+</div>

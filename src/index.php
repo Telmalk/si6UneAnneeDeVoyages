@@ -38,11 +38,11 @@
             </div>
             <ul class="navbar-ul">
                 <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
-                <li class="navbar-ul-li"><a href="#">Notre Sélection</a></li>
-                <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
+                <li class="navbar-ul-li"><a href="top.php?page=Bien-être">Notre Sélection</a></li>
+                <li class="navbar-ul-li"><a href="./card.php?page=all">Fiches pratiques</a></li>
                 <li class="navbar-ul-li"><a href="#">Articles</a></li>
-                <li class="navbar-ul-li"><a href="./abouus.php">Contact</a></li>
-                <li class="navbar-ul-li"><a href="#">À propos</a></li>
+                <li class="navbar-ul-li"><a href="#formContact">Contact</a></li>
+                <li class="navbar-ul-li"><a href="./abouus.php">À propos</a></li>
             </ul>
         </nav>
         <div class="hide">
@@ -52,7 +52,7 @@
                     <li class="modal-content-li"><a href="#">Abonnement</a></li>
                     <li class="modal-content-li"><a href="#">Fiches pratiques</a></li>
                     <li class="modal-content-li"><a href="#">À propos</a></li>
-                    <li class="modal-content-li"><a href="#">Contact</a></li>
+                    <li class="modal-content-li"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -218,7 +218,7 @@
             <a href="#" class="bot-contact-social-link"><img class="bot-contact-social-link-icon" src="img/youtube.svg"/></a>
         </div>
     </div>
-    <div class="bot-msg">
+    <div id="formContact" class="bot-msg">
         <h3 class="bot-msg-title">Envoyez nous un message</h3>
         <form>
 

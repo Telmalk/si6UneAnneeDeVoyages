@@ -117,4 +117,4 @@ getHeader();
     </div>
 </section>
 <?php
-// getFooter();
+getFooter();

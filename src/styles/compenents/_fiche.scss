@@ -1,0 +1,50 @@
+.unefiche {
+  box-shadow: 0 2px 9px 0 rgba(0,0,0,0.50);
+  width: 100%;
+  margin: 5vh auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Playfair Display Regular', sans-serif;
+  @include for-size(tablet-portrait-up){
+    width: 80%;
+  }
+  &-image {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+  &-par {
+    padding: 10px;
+    line-height: 1.5em;
+    @include for-size(tablet-portrait-up){
+      padding: 20px;
+    }
+  }
+  &-info {
+    display: flex;
+    flex-wrap: wrap;
+    &-col {
+      width: 100%;
+      text-align: center;
+      line-height: 1.6em;
+      color: #15DAB6;
+      font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
+      font-size: 1.2rem;
+      @include for-size(tablet-portrait-up) {
+        width: 50%;
+        line-height: 1.8em;
+      }
+      & a {
+        color: #15DAB6;
+        text-decoration: none;
+      }
+    }
+  }
+  &-qr {
+    display: flex;
+    & img {
+      margin: 0 auto;
+    }
+  }
+}
