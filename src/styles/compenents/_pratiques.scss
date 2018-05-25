@@ -7,6 +7,7 @@
   padding-right: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #767676;
+  flex-wrap: wrap;
   @include for-size(tablet-landscape-up){
     width: 80%;
     padding-left: 20px;
@@ -16,10 +17,18 @@
     width: 90%;
   }
   &-lien {
+    width: 33%;
+    height: 20px;
+    margin-top: 10px;
     color: #767676;
     text-decoration: none;
     font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
     text-transform: uppercase;
+    text-align: center;
+    @include for-size(tablet-portrait-up){
+      width: auto;
+      height: auto;
+    }
   }
 }
 
@@ -37,15 +46,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     @include for-size(tablet-portrait-up){
       width: 45%;
     }
     @include for-size(tablet-landscape-up){
       width: 23%;
     }
+    &-img {
+      width: 100%;
+      height: 100%;
+    }
     &-title {
       font-family: 'Tw Cen MT Condensed Extra Bold', sans-serif;
       font-size: 1.2rem;
+      position: absolute;
+      & a {
+        color: white;
+        text-decoration: none;
+      }
     }
   }
 }
@@ -69,6 +88,20 @@
 .greenbottom {
   margin-top: 5vh;
   width: 100%;
-  height: 250px;
+  height: 150px;
   background-color: #15DAB6;
+  @include for-size(tablet-landscape-up){
+    height: 200px;
+  }
+  @include for-size(desktop-up){
+    height: 250px;
+  }
+}
+
+.active {
+  background-color: #15DAB6;
+  color: white;
+  @include for-size(tablet-portrait-up){
+    padding: 5px 10px;
+  }
 }

@@ -31,7 +31,7 @@ if (!empty($_FILES['logo']['name']) && $_FILES['logo']['name'] !== $_GET['img'])
     saveFile("../../img/partenaire/", "logo");
     $stmt->bindValue(":logo",htmlentities($_FILES["logo"]['name']));
 } else {
-    $stmt->bindValue(":logo", htmlentities("partenaire/" . $_GET['img']));
+    $stmt->bindValue(":logo", htmlentities($_GET['img']));
 }
 $stmt->execute();
 

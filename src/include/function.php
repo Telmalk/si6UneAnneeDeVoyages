@@ -33,7 +33,7 @@ function getHeader()
                     <li class="navbar-ul-li"><a href="#">Notre Sélection</a></li>
                     <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
                     <li class="navbar-ul-li"><a href="#">Articles</a></li>
-                    <li class="navbar-ul-li"><a href="#">Contact</a></li>
+                    <li class="navbar-ul-li"><a href="./index.php#formContact">Contact</a></li>
                     <li class="navbar-ul-li"><a href="#">À propos</a></li>
                 </ul>
             </nav>
