@@ -9,7 +9,7 @@
 require_once "./include/connection.php";
 require_once "./include/function.php";
 
-getHeader();
+getHeader("A propos");
 ?>
 
 <section class="about">

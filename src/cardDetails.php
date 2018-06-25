@@ -7,7 +7,7 @@
  */
 require_once "./include/connection.php";
 require_once "./include/function.php";
-getHeader();
+getHeader("fiche technique details");
 $sql = "
 SELECT
   `id_carrousel`,

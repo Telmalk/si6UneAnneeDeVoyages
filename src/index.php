@@ -37,10 +37,10 @@
                 <img class="navbar-toggle-burger" src="img/menu.svg" />
             </div>
             <ul class="navbar-ul">
-                <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
+                <li class="navbar-ul-li"><a href="./subscribe.php">Abonnement</a></li>
                 <li class="navbar-ul-li"><a href="top.php?page=Bien-être">Notre Sélection</a></li>
                 <li class="navbar-ul-li"><a href="./card.php?page=all">Fiches pratiques</a></li>
-                <li class="navbar-ul-li"><a href="#">Articles</a></li>
+                <li class="navbar-ul-li"><a href="./allArticle.php">Articles</a></li>
                 <li class="navbar-ul-li"><a href="#formContact">Contact</a></li>
                 <li class="navbar-ul-li"><a href="./abouus.php">À propos</a></li>
             </ul>
@@ -49,10 +49,12 @@
             <div class="modal">
                 <div class="modal-overlay"></div>
                 <ul class="modal-content">
-                    <li class="modal-content-li"><a href="#">Abonnement</a></li>
-                    <li class="modal-content-li"><a href="#">Fiches pratiques</a></li>
-                    <li class="modal-content-li"><a href="#">À propos</a></li>
-                    <li class="modal-content-li"><a href="#contact">Contact</a></li>
+                    <li class="modal-content-li"><a href="./subscribe.php">Abonnement</a></li>
+                    <li class="modal-content-li"><a href="./top.php?page=Bien-être">Notre Sélection</a></li>
+                    <li class="modal-content-li"><a href="./card.php?page=all">Fiches pratiques</a></li>
+                    <li class="modal-content-li"><a href="./allArticle.php">Articles</a></li>
+                    <li class="modal-content-li"><a href="/index.php#formContact">Contact</a></li>
+                    <li class="modal-content-li"><a href="/abouus.php">À propos</a></li>
                 </ul>
             </div>
         </div>

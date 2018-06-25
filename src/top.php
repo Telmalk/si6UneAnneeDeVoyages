@@ -27,14 +27,13 @@ $sql = "
         `title`
     FROM
       `carrousel`
-     ORDER BY id_carrousel 
-    DESC LIMIT 0, 3;
+     ORDER BY id_carrousel; 
 ";
 $stmt = $pdo->prepare($sql);
 $stmt->execute();
 
 $nbFind = 1;
-getHeader();
+getHeader("top 100");
 ?>
 
 <section class="top-buttonSection">
@@ -55,9 +54,9 @@ getHeader();
             <a href="#"><img class="top-itemImg" src="img/fiche_technique/<?=$row['img']?>" alt="Photo de la fiche technique"></a>
         </div>
         <div class="top-itemInfo">
-            <div><a class="top-itemTitle" href="fiche.php?id=<?=$row['id_carrousel']?>"><?=$row['title']?></a></div>
+            <div><a class="top-itemTitle" href="cardDetails.php?id=<?=$row['id_carrousel']?>"><?=$row['title']?></a></div>
             <div class="top-itemTxt"><a class="top-itemTxtLink" href="fiche.php?id=<?=$row['id_carrousel']?>"><?=nl2br($row['description'])?> </a></div>
-            <div><a class="top-itemSeemore" href="fiche.php?id=<?=$row['id_carrousel']?>">VOIR PLUS</a></div>
+            <div><a class="top-itemSeemore" href="cardDetails.php?id=<?=$row['id_carrousel']?>">VOIR PLUS</a></div>
         </div>
     </div>
     <?php
