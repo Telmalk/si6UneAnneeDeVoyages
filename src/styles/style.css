@@ -1299,6 +1299,256 @@ table {
   margin: 0 auto;
 }
 
+.subscribe-title {
+  color: #15DAB6;
+  font-size: 7.2rem;
+  font-family: "PlayfairDisplay-BlackItalic";
+  opacity: 0.3;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscribe-title {
+    font-size: 10rem;
+  }
+}
+.subscribe-book {
+  display: block;
+  padding-top: 3rem;
+  margin: 0 auto;
+}
+.subscribe-buttonContainer {
+  padding-top: 2rem;
+}
+.subscribe-button {
+  display: block;
+  margin: 0 auto;
+  width: 271px;
+  height: 37px;
+  background-color: #15DAB6;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscribe-button {
+    font-size: 1.6rem;
+    width: 300px;
+    height: 50px;
+  }
+}
+.subscribe-textContainer {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+}
+@media (min-width: 1200px) {
+  .subscribe-textContainer {
+    width: 50rem;
+    height: 12rem;
+  }
+}
+.subscribe-textTitle {
+  padding-top: 3rem;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  text-align: center;
+  font-size: 2rem;
+  color: #4A4A4A;
+}
+@media (min-width: 1200px) {
+  .subscribe-textTitle {
+    font-size: 3rem;
+  }
+}
+.subscribe-text {
+  padding-top: 2rem;
+  font-size: 1.4rem;
+  line-height: 25px;
+  color: #979797;
+}
+@media (min-width: 1200px) {
+  .subscribe-text {
+    font-size: 2rem;
+    line-height: 34px;
+  }
+}
+.subscribe-list {
+  display: block;
+  margin: 0 auto;
+  width: 20rem;
+  padding-top: 2rem;
+}
+@media (min-width: 1200px) {
+  .subscribe-list {
+    width: 50rem;
+    height: 28rem;
+  }
+}
+.subscribe-listItems {
+  padding-top: 1rem;
+  list-style-type: none;
+  font-size: 1.4rem;
+  line-height: 25px;
+  color: #979797;
+}
+@media (min-width: 1200px) {
+  .subscribe-listItems {
+    font-size: 2rem;
+    line-height: 34px;
+  }
+}
+.subscribe-preniumTitle {
+  color: #15DAB6;
+  font-size: 6.2rem;
+  font-family: "PlayfairDisplay-BlackItalic";
+  opacity: 0.3;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumTitle {
+    font-size: 10rem;
+  }
+}
+.subscribe-preniumTextTitle {
+  padding-top: 3rem;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  text-align: center;
+  font-size: 2rem;
+  color: #4A4A4A;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumTextTitle {
+    font-size: 3rem;
+  }
+}
+.subscribe-preniumBlockContainer {
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe-preniumBlockItems {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  width: 3rem;
+  height: 2.5rem;
+  background-color: #15DAB6;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumBlockItems {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.subscribe-preniumBlocknNb {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-size: 1.2rem;
+  margin: auto;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumBlocknNb {
+    font-size: 2.2rem;
+  }
+}
+.subscribe-preniumBlockItems2 {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  width: 3rem;
+  height: 2.5rem;
+  border: 1px solid #15DAB6;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumBlockItems2 {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.subscribe-preniumBlocknNb2 {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  font-size: 1.2rem;
+  margin: auto;
+  color: #9B9B9B;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumBlocknNb2 {
+    font-size: 2.2rem;
+  }
+}
+.subscribe-preniumStepContainer {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.subscribe-preniumStep {
+  padding-top: 1rem;
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+.subscribe-preniumText {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  color: #767676;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumText {
+    font-size: 1.8rem;
+  }
+}
+.subscribe-preniumText2 {
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  color: #9B9B9B;
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumText2 {
+    font-size: 1.8rem;
+  }
+}
+.subscribe-preniumLine {
+  display: flex;
+  margin: 0 auto;
+  width: 14rem;
+  height: 0.2rem;
+  background-color: #D8D8D8;
+}
+.subscribe-preniumFormStatus {
+  padding-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #9B9B9B;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumFormStatus {
+    font-size: 1.8rem;
+  }
+}
+.subscribe-preniumRadioContainer {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 30rem;
+}
+.subscribe-preniumRadio {
+  display: flex;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: "Tw Cen MT Condensed Extra Bold";
+  color: #767676;
+}
+@media (min-width: 1200px) {
+  .subscribe-preniumRadio {
+    font-size: 1.6rem;
+  }
+}
+
 .about {
   position: relative;
 }

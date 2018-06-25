@@ -28,7 +28,7 @@ if ($row === false) {
     header("location: error.php");
     exit;
 }
-getHeader();
+getHeader("article");
 
 $date = substr($row['spawnDate'], 2);
 

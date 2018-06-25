@@ -5,7 +5,7 @@
  * Date: 22/05/2018
  * Time: 16:01
  */
-function getHeader()
+function getHeader($title)
 {
     ?>
     <!DOCTYPE html>
@@ -15,7 +15,7 @@ function getHeader()
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Tops</title>
+        <title><?=$title?></title>
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
@@ -29,22 +29,24 @@ function getHeader()
                     <img class="navbar-toggle-burger" src="img/menu.svg" />
                 </div>
                 <ul class="navbar-ul">
-                    <li class="navbar-ul-li"><a href="#">Abonnement</a></li>
-                    <li class="navbar-ul-li"><a href="#">Notre Sélection</a></li>
-                    <li class="navbar-ul-li"><a href="#">Fiches pratiques</a></li>
-                    <li class="navbar-ul-li"><a href="#">Articles</a></li>
+                    <li class="navbar-ul-li"><a href="./subscribe.php">Abonnement</a></li>
+                    <li class="navbar-ul-li"><a href="./top.php?page=Bien-être">Notre Sélection</a></li>
+                    <li class="navbar-ul-li"><a href="./card.php?page=all">Fiches pratiques</a></li>
+                    <li class="navbar-ul-li"><a href="./allArticle.php">Articles</a></li>
                     <li class="navbar-ul-li"><a href="./index.php#formContact">Contact</a></li>
-                    <li class="navbar-ul-li"><a href="#">À propos</a></li>
+                    <li class="navbar-ul-li"><a href="./abouus.php">À propos</a></li>
                 </ul>
             </nav>
             <div class="hide">
                 <div class="modal">
                     <div class="modal-overlay"></div>
                     <ul class="modal-content">
-                        <li class="modal-content-li"><a href="#">Abonnement</a></li>
-                        <li class="modal-content-li"><a href="#">Fiches pratiques</a></li>
-                        <li class="modal-content-li"><a href="#">À propos</a></li>
-                        <li class="modal-content-li"><a href="#">Contact</a></li>
+                        <li class="modal-content-li"><a href="./subscribe.php">Abonnement</a></li>
+                        <li class="modal-content-li"><a href="./top.php?page=Bien-être">Notre Sélection</a></li>
+                        <li class="modal-content-li"><a href="./card.php?page=all">Fiches pratiques</a></li>
+                        <li class="modal-content-li"><a href="./allArticle.php">Articles</a></li>
+                        <li class="modal-content-li"><a href="/index.php#formContact">Contact</a></li>
+                        <li class="modal-content-li"><a href="/abouus.php">À propos</a></li>
                     </ul>
                 </div>
             </div>

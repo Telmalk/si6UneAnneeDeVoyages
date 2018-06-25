@@ -8,7 +8,7 @@
 
 require_once "./include/connection.php";
 require_once "./include/function.php";
-getHeader();
+getHeader("fiche technique");
 
 $sql = "
 SELECT

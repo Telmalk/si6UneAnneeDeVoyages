@@ -40,7 +40,7 @@ $stmt->bindValue(":adress", $_POST['adress']);
 $stmt->bindValue(":phone", $_POST['phone']);
 $stmt->bindValue(":url", $_POST['url_site']);
 $stmt->bindValue(":category", $_POST['category']);
-$stmt->bindValue(":img",$_FILES["img"]['name']);
+$stmt->bindValue(":img", $_FILES["img"]['name']);
 $stmt->execute();
 header("location: ./showCompany.php");
 exit;
